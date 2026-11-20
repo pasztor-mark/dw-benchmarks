@@ -12,6 +12,7 @@ authors:
   - family-names: Pásztor
     given-names: Márk
     website: "https://www.pasztormark.dev"
+    orcid: "https://orcid.org/0009-0002-9512-7516"
 doi: 10.5281/zenodo.24406317
 repository-code: "https://github.com/pasztor-mark/dw-benchmarks"
 url: "https://dotwire.pasztormark.dev/docs/benchmarks"
