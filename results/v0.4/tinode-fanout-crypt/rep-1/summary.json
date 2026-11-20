@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "target": "tinode",
+  "variant": null,
+  "scenario": "fanout",
+  "disk": "crypt",
+  "rep": 1,
+  "local": false,
+  "smoke": false,
+  "steps": [
+    {
+      "index": 0,
+      "label": "size=10",
+      "params": {
+        "rate": 10,
+        "size": 10
+      },
+      "started_at": "2026-11-17T05:14:09.928105171Z",
+      "ended_at": "2026-11-17T05:16:49.990925764Z",
+      "sent": 1200,
+      "expected": 10800,
+      "received": 10800,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 10800,
+        "p50": 13175,
+        "p95": 19471,
+        "p99": 25615,
+        "p999": 34591,
+        "max": 44063
+      },
+      "service_us": {
+        "count": 10773,
+        "p50": 11767,
+        "p95": 18143,
+        "p99": 24735,
+        "p999": 33087,
+        "max": 42943
+      },
+      "ack_us": {
+        "count": 1200,
+        "p50": 10823,
+        "p95": 17055,
+        "p99": 23535,
+        "p999": 32495,
+        "max": 41951
+      },
+      "sched_lag_us": {
+        "count": 1200,
+        "p50": 1216,
+        "p95": 1667,
+        "p99": 1773,
+        "p999": 3993,
+        "max": 4027
+      },
+      "harness_cpu": 0.0015381420265655368,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "incomplete_messages": 0,
+        "last_recipient_us": {
+          "count": 1200,
+          "max": 44063,
+          "p50": 13255,
+          "p95": 19519,
+          "p99": 25615,
+          "p999": 34623
+        },
+        "unsent": 0
+      }
+    },
+    {
+      "index": 1,
+      "label": "size=100",
+      "params": {
+        "rate": 10,
+        "size": 100
+      },
+      "started_at": "2026-11-17T05:16:49.991683599Z",
+      "ended_at": "2026-11-17T05:19:30.372259660Z",
+      "sent": 1200,
+      "expected": 118800,
+      "received": 118800,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 118800,
+        "p50": 14655,
+        "p95": 21455,
+        "p99": 26511,
+        "p999": 42431,
+        "max": 67839
+      },
+      "service_us": {
+        "count": 118767,
+        "p50": 13335,
+        "p95": 20063,
+        "p99": 25055,
+        "p999": 40543,
+        "max": 66559
+      },
+      "ack_us": {
+        "count": 1200,
+        "p50": 11399,
+        "p95": 18175,
+        "p99": 22799,
+        "p999": 38847,
+        "max": 63903
+      },
+      "sched_lag_us": {
+        "count": 1200,
+        "p50": 1172,
+        "p95": 1675,
+        "p99": 1747,
+        "p999": 3969,
+        "max": 5995
+      },
+      "harness_cpu": 0.005686379782455263,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "incomplete_messages": 0,
+        "last_recipient_us": {
+          "count": 1200,
+          "max": 67839,
+          "p50": 15527,
+          "p95": 22399,
+          "p99": 28063,
+          "p999": 42751
+        },
+        "unsent": 0
+      }
+    },
+    {
+      "index": 2,
+      "label": "size=1000",
+      "params": {
+        "rate": 10,
+        "size": 1000
+      },
+      "started_at": "2026-11-17T05:19:30.375992694Z",
+      "ended_at": "2026-11-17T05:22:17.702625212Z",
+      "sent": 1200,
+      "expected": 1198800,
+      "received": 1198800,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 1198800,
+        "p50": 24015,
+        "p95": 36511,
+        "p99": 43871,
+        "p999": 74175,
+        "max": 103487
+      },
+      "service_us": {
+        "count": 1198787,
+        "p50": 22751,
+        "p95": 35295,
+        "p99": 42655,
+        "p999": 73151,
+        "max": 102719
+      },
+      "ack_us": {
+        "count": 1200,
+        "p50": 11447,
+        "p95": 19455,
+        "p99": 25375,
+        "p999": 50367,
+        "max": 64223
+      },
+      "sched_lag_us": {
+        "count": 1200,
+        "p50": 1090,
+        "p95": 1587,
+        "p99": 1670,
+        "p999": 4091,
+        "max": 4715
+      },
+      "harness_cpu": 0.04319640407810442,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "incomplete_messages": 0,
+        "last_recipient_us": {
+          "count": 1200,
+          "max": 103487,
+          "p50": 34495,
+          "p95": 43007,
+          "p99": 50719,
+          "p999": 88191
+        },
+        "unsent": 0
+      }
+    },
+    {
+      "index": 3,
+      "label": "size=5000",
+      "params": {
+        "rate": 10,
+        "size": 5000
+      },
+      "started_at": "2026-11-17T05:22:17.721951110Z",
+      "ended_at": "2026-11-17T05:27:51.766839694Z",
+      "sent": 1200,
+      "expected": 5998800,
+      "received": 5998800,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 5998800,
+        "p50": 51007,
+        "p95": 81151,
+        "p99": 172799,
+        "p999": 360447,
+        "max": 868351
+      },
+      "service_us": {
+        "count": 5993908,
+        "p50": 49855,
+        "p95": 79487,
+        "p99": 169471,
+        "p999": 358655,
+        "max": 867327
+      },
+      "ack_us": {
+        "count": 1200,
+        "p50": 9855,
+        "p95": 17967,
+        "p99": 27151,
+        "p999": 81919,
+        "max": 96511
+      },
+      "sched_lag_us": {
+        "count": 1200,
+        "p50": 1018,
+        "p95": 1483,
+        "p99": 1556,
+        "p999": 62495,
+        "max": 162559
+      },
+      "harness_cpu": 0.19625602637013,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "incomplete_messages": 0,
+        "last_recipient_us": {
+          "count": 1200,
+          "max": 868351,
+          "p50": 75775,
+          "p95": 403199,
+          "p99": 703487,
+          "p999": 816127
+        },
+        "unsent": 0
+      }
+    }
+  ],
+  "derived": {
+    "max_sustainable_rate": null
+  }
+}

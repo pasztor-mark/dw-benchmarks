@@ -1,0 +1,40 @@
+payload_bytes = 256
+inflight_cap = 10000
+
+[target]
+base_url = "http://127.0.0.1:8080"
+ws_url = "ws://127.0.0.1:8080"
+jwt_private_key_path = "targets/dotwire/keys/jwt.key"
+jwt_kid = "bench"
+jwt_issuer = "dwbench"
+jwt_audience = "dotwire"
+tinode_api_key = "AQEAAAABAAD_rAp4DJh05a1HAwFT3A6K"
+
+[step]
+warmup_s = 1
+measure_s = 5
+drain_s = 2
+
+[scenarios.latency_ladder]
+rooms = 2
+members = 3
+rates = [2, 5]
+
+[scenarios.fanout]
+sizes = [3, 5]
+rate = 2
+
+[scenarios.connections]
+levels = [5, 10]
+connect_rate = 5
+hold_s = 3
+
+[scenarios.reconnect]
+users = 6
+rate_per_room = 1.0
+
+[scenarios.history]
+rooms = 2
+per_room = 20
+rates = [2, 5]
+limit = 50

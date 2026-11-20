@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "target": "synapse",
+  "variant": null,
+  "scenario": "latency-ladder",
+  "disk": "crypt",
+  "rep": 2,
+  "local": false,
+  "smoke": false,
+  "steps": [
+    {
+      "index": 0,
+      "label": "rate=100",
+      "params": {
+        "members": 10,
+        "rate": 100,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T10:13:58.995233322Z",
+      "ended_at": "2026-11-17T10:19:17.856958046Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 42361,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 12000,
+      "latency_us": {
+        "count": 42361,
+        "p50": 60030975,
+        "p95": 65798143,
+        "p99": 66879487,
+        "p999": 67108863,
+        "max": 67108863
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 12000,
+        "p50": 1436,
+        "p95": 1930,
+        "p99": 2193,
+        "p999": 4627,
+        "max": 6639
+      },
+      "harness_cpu": 0.017547886796485414,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "unsent": 0
+      }
+    }
+  ],
+  "derived": {
+    "max_sustainable_rate": null
+  }
+}

@@ -1,0 +1,101 @@
+services:
+  dotwire:
+    image: ${DOTWIRE_IMAGE:-ghcr.io/pasztor-mark/dotwire:0.4.1}
+    user: "1654:1654"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    tmpfs:
+      - /tmp
+    ports:
+      - "${BIND_IP:-127.0.0.1}:8080:8080"
+    env_file:
+      - bench.env
+      - ${VARIANT_ENV:-/dev/null}
+      - keys/secrets.env
+    environment:
+      DOTNET_gcServer: "1"
+      DOTNET_GCDynamicAdaptationMode: "1"
+      ConnectionStrings__PostgresMigrator: "Host=postgres;Port=5432;Database=dotwire;Username=dotwire;Password=${POSTGRES_PASSWORD:?}"
+      ConnectionStrings__PostgresWrite: "Host=postgres;Port=5432;Database=dotwire;Username=dotwire_app;Password=${POSTGRES_APP_PASSWORD:?}"
+      ConnectionStrings__PostgresRead: "Host=postgres;Port=5432;Database=dotwire;Username=dotwire_app;Password=${POSTGRES_APP_PASSWORD:?}${DOTWIRE_READ_POOL_OPTS:-}"
+      Postgres__AppRolePassword: "${POSTGRES_APP_PASSWORD:?}"
+      Nats__Url: "nats://nats:4222"
+      Auth__Keys__bench: "${Auth__Keys__bench:?}"
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    healthcheck:
+      test: ["CMD", "/app/dotwire", "--healthcheck"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    depends_on:
+      postgres:
+        condition: service_healthy
+      nats:
+        condition: service_healthy
+
+  postgres:
+    image: timescale/timescaledb:2.31.0-pg17
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE
+      - FOWNER
+    environment:
+      POSTGRES_DB: dotwire
+      POSTGRES_USER: dotwire
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?}
+      TIMESCALEDB_TELEMETRY: "off"
+      NO_TS_TUNE: "true"
+    volumes:
+      - ${DATA_ROOT:?}/dotwire/live/pg:/var/lib/postgresql/data
+      - ../pg-init/999_bench_conf.sh:/docker-entrypoint-initdb.d/999_bench_conf.sh:ro
+      - ${PG_CONF:-../postgres.conf}:/etc/postgresql/bench.conf:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dotwire -d dotwire"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  nats-init:
+    image: nats:2.15.1-alpine
+    entrypoint: ["chown", "1000:1000", "/data"]
+    user: "0:0"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+    volumes:
+      - ${DATA_ROOT:?}/dotwire/live/nats:/data
+
+  nats:
+    image: nats:2.15.1-alpine
+    command: ["-js", "-sd", "/data", "-m", "8222"]
+    user: "1000:1000"
+    depends_on:
+      nats-init:
+        condition: service_completed_successfully
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    volumes:
+      - ${DATA_ROOT:?}/dotwire/live/nats:/data
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O-", "http://localhost:8222/healthz"]
+      interval: 5s
+      timeout: 3s
+      retries: 10

@@ -1,0 +1,252 @@
+services:
+  synapse:
+    image: matrixdotorg/synapse:v1.165.0
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - DAC_OVERRIDE
+      - CHOWN
+      - SETUID
+      - SETGID
+    command: ["run"]
+    healthcheck:
+      test: ["CMD", "curl", "-fSs", "http://localhost:8008/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?}
+      SYNAPSE_CONFIG_PATH: /conf/homeserver.yaml
+      UID: "0"
+      GID: "0"
+    volumes:
+      - ./homeserver.yaml:/conf/homeserver.yaml:ro
+      - ./log.config:/conf/log.config:ro
+      - ./workers:/conf/workers:ro
+      - ./keys/registration_shared_secret:/keys/registration_shared_secret:ro
+      - ${DATA_ROOT:?}/synapse/live/data:/data
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+
+  sync1:
+    image: matrixdotorg/synapse:v1.165.0
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - DAC_OVERRIDE
+      - CHOWN
+      - SETUID
+      - SETGID
+    entrypoint: ["python", "-m", "synapse.app.generic_worker", "--config-path", "/conf/homeserver.yaml", "--config-path", "/conf/workers/sync1.yaml"]
+    healthcheck:
+      test: ["CMD", "curl", "-fSs", "http://localhost:8083/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    depends_on:
+      synapse:
+        condition: service_healthy
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?}
+      SYNAPSE_CONFIG_PATH: /conf/homeserver.yaml
+    volumes:
+      - ./homeserver.yaml:/conf/homeserver.yaml:ro
+      - ./log.config:/conf/log.config:ro
+      - ./workers:/conf/workers:ro
+      - ./keys/registration_shared_secret:/keys/registration_shared_secret:ro
+      - ${DATA_ROOT:?}/synapse/live/data:/data
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+
+  sync2:
+    image: matrixdotorg/synapse:v1.165.0
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - DAC_OVERRIDE
+      - CHOWN
+      - SETUID
+      - SETGID
+    entrypoint: ["python", "-m", "synapse.app.generic_worker", "--config-path", "/conf/homeserver.yaml", "--config-path", "/conf/workers/sync2.yaml"]
+    healthcheck:
+      test: ["CMD", "curl", "-fSs", "http://localhost:8083/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    depends_on:
+      synapse:
+        condition: service_healthy
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?}
+      SYNAPSE_CONFIG_PATH: /conf/homeserver.yaml
+    volumes:
+      - ./homeserver.yaml:/conf/homeserver.yaml:ro
+      - ./log.config:/conf/log.config:ro
+      - ./workers:/conf/workers:ro
+      - ./keys/registration_shared_secret:/keys/registration_shared_secret:ro
+      - ${DATA_ROOT:?}/synapse/live/data:/data
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+
+  client1:
+    image: matrixdotorg/synapse:v1.165.0
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - DAC_OVERRIDE
+      - CHOWN
+      - SETUID
+      - SETGID
+    entrypoint: ["python", "-m", "synapse.app.generic_worker", "--config-path", "/conf/homeserver.yaml", "--config-path", "/conf/workers/client1.yaml"]
+    healthcheck:
+      test: ["CMD", "curl", "-fSs", "http://localhost:8083/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    depends_on:
+      synapse:
+        condition: service_healthy
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?}
+      SYNAPSE_CONFIG_PATH: /conf/homeserver.yaml
+    volumes:
+      - ./homeserver.yaml:/conf/homeserver.yaml:ro
+      - ./log.config:/conf/log.config:ro
+      - ./workers:/conf/workers:ro
+      - ./keys/registration_shared_secret:/keys/registration_shared_secret:ro
+      - ${DATA_ROOT:?}/synapse/live/data:/data
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+
+  persister1:
+    image: matrixdotorg/synapse:v1.165.0
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - DAC_OVERRIDE
+      - CHOWN
+      - SETUID
+      - SETGID
+    entrypoint: ["python", "-m", "synapse.app.generic_worker", "--config-path", "/conf/homeserver.yaml", "--config-path", "/conf/workers/persister1.yaml"]
+    healthcheck:
+      test: ["CMD", "curl", "-fSs", "http://localhost:9093/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    depends_on:
+      synapse:
+        condition: service_healthy
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?}
+      SYNAPSE_CONFIG_PATH: /conf/homeserver.yaml
+    volumes:
+      - ./homeserver.yaml:/conf/homeserver.yaml:ro
+      - ./log.config:/conf/log.config:ro
+      - ./workers:/conf/workers:ro
+      - ./keys/registration_shared_secret:/keys/registration_shared_secret:ro
+      - ${DATA_ROOT:?}/synapse/live/data:/data
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+
+  redis:
+    image: redis:8.8.4-alpine
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  nginx:
+    image: nginx:1.31.8-alpine
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE
+    ports:
+      - "${BIND_IP:-127.0.0.1}:8008:8008"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8008/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    depends_on:
+      synapse:
+        condition: service_healthy
+      sync1:
+        condition: service_healthy
+      sync2:
+        condition: service_healthy
+      client1:
+        condition: service_healthy
+      persister1:
+        condition: service_healthy
+
+  postgres:
+    image: timescale/timescaledb:2.31.0-pg17
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE
+      - FOWNER
+    environment:
+      POSTGRES_DB: synapse
+      POSTGRES_USER: synapse
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
+      TIMESCALEDB_TELEMETRY: "off"
+      NO_TS_TUNE: "true"
+    volumes:
+      - ${DATA_ROOT:?}/synapse/live/pg:/var/lib/postgresql/data
+      - ../pg-init/999_bench_conf.sh:/docker-entrypoint-initdb.d/999_bench_conf.sh:ro
+      - ${PG_CONF:-../postgres.conf}:/etc/postgresql/bench.conf:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U synapse"]
+      interval: 5s
+      timeout: 3s
+      retries: 10

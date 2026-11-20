@@ -1,0 +1,414 @@
+{
+  "schema": 1,
+  "target": "tinode",
+  "variant": null,
+  "scenario": "latency-ladder",
+  "disk": "crypt",
+  "rep": 1,
+  "local": false,
+  "smoke": false,
+  "steps": [
+    {
+      "index": 0,
+      "label": "rate=100",
+      "params": {
+        "members": 10,
+        "rate": 100,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T01:05:29.362204327Z",
+      "ended_at": "2026-11-17T01:08:12.738875531Z",
+      "sent": 12000,
+      "expected": 108000,
+      "received": 108000,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 108000,
+        "p50": 11487,
+        "p95": 23279,
+        "p99": 32719,
+        "p999": 53311,
+        "max": 109247
+      },
+      "service_us": {
+        "count": 41297,
+        "p50": 10039,
+        "p95": 22479,
+        "p99": 32799,
+        "p999": 61503,
+        "max": 108095
+      },
+      "ack_us": {
+        "count": 12000,
+        "p50": 9807,
+        "p95": 21583,
+        "p99": 30879,
+        "p999": 51647,
+        "max": 107647
+      },
+      "sched_lag_us": {
+        "count": 12000,
+        "p50": 1601,
+        "p95": 2087,
+        "p99": 2165,
+        "p999": 3147,
+        "max": 8019
+      },
+      "harness_cpu": 0.00956689798752949,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "unsent": 0
+      }
+    },
+    {
+      "index": 1,
+      "label": "rate=500",
+      "params": {
+        "members": 10,
+        "rate": 500,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T01:08:12.742943407Z",
+      "ended_at": "2026-11-17T01:10:56.017523274Z",
+      "sent": 60000,
+      "expected": 540000,
+      "received": 540000,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 540000,
+        "p50": 21951,
+        "p95": 503551,
+        "p99": 762879,
+        "p999": 919039,
+        "max": 975871
+      },
+      "service_us": {
+        "count": 286572,
+        "p50": 21215,
+        "p95": 537087,
+        "p99": 794111,
+        "p999": 925183,
+        "max": 974847
+      },
+      "ack_us": {
+        "count": 60000,
+        "p50": 20959,
+        "p95": 502271,
+        "p99": 761855,
+        "p999": 917503,
+        "max": 974335
+      },
+      "sched_lag_us": {
+        "count": 60000,
+        "p50": 899,
+        "p95": 1475,
+        "p99": 1533,
+        "p999": 3477,
+        "max": 30767
+      },
+      "harness_cpu": 0.03522104602234392,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "unsent": 0
+      }
+    },
+    {
+      "index": 2,
+      "label": "rate=1000",
+      "params": {
+        "members": 10,
+        "rate": 1000,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T01:10:56.024235308Z",
+      "ended_at": "2026-11-17T01:13:39.185003796Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 492786,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 120000,
+      "latency_us": {
+        "count": 492786,
+        "p50": 35553279,
+        "p95": 38961151,
+        "p99": 39256063,
+        "p999": 39321599,
+        "max": 39354367
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 120000,
+        "p50": 429,
+        "p95": 1093,
+        "p99": 1164,
+        "p999": 1561,
+        "max": 12071
+      },
+      "harness_cpu": 0.05323682768905667,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 0,
+        "unsent": 0
+      }
+    },
+    {
+      "index": 3,
+      "label": "rate=2000",
+      "params": {
+        "members": 10,
+        "rate": 2000,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T01:13:39.194208191Z",
+      "ended_at": "2026-11-17T01:16:29.735488225Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 473724,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 240000,
+      "latency_us": {
+        "count": 473724,
+        "p50": 34177023,
+        "p95": 36831231,
+        "p99": 36929535,
+        "p999": 36962303,
+        "max": 36995071
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 240000,
+        "p50": 1028,
+        "p95": 1867,
+        "p99": 2005,
+        "p999": 2517,
+        "max": 13527
+      },
+      "harness_cpu": 0.07547127738161606,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 3323,
+        "unsent": 0
+      }
+    },
+    {
+      "index": 4,
+      "label": "rate=5000",
+      "params": {
+        "members": 10,
+        "rate": 5000,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T01:16:29.746036108Z",
+      "ended_at": "2026-11-17T01:19:20.235519872Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 486852,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 600000,
+      "latency_us": {
+        "count": 486852,
+        "p50": 34537471,
+        "p95": 35684351,
+        "p99": 35913727,
+        "p999": 35979263,
+        "max": 36044799
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 600000,
+        "p50": 1012,
+        "p95": 1865,
+        "p99": 2049,
+        "p999": 2435,
+        "max": 21343
+      },
+      "harness_cpu": 0.13105350071143257,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 3040,
+        "unsent": 0
+      }
+    },
+    {
+      "index": 5,
+      "label": "rate=10000",
+      "params": {
+        "members": 10,
+        "rate": 10000,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T01:19:20.250662382Z",
+      "ended_at": "2026-11-17T01:22:10.625201979Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 537499,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 1200000,
+      "latency_us": {
+        "count": 537499,
+        "p50": 31653887,
+        "p95": 32718847,
+        "p99": 33439743,
+        "p999": 33538047,
+        "max": 33619967
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 1200000,
+        "p50": 959,
+        "p95": 1805,
+        "p99": 1998,
+        "p999": 2185,
+        "max": 30623
+      },
+      "harness_cpu": 0.16385567007952426,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 3444,
+        "unsent": 0
+      }
+    },
+    {
+      "index": 6,
+      "label": "rate=20000",
+      "params": {
+        "members": 10,
+        "rate": 20000,
+        "rooms": 100
+      },
+      "started_at": "2026-11-17T01:22:10.654181522Z",
+      "ended_at": "2026-11-17T01:25:01.240427565Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 512973,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 2400000,
+      "latency_us": {
+        "count": 512973,
+        "p50": 32342015,
+        "p95": 34537471,
+        "p99": 34799615,
+        "p999": 34865151,
+        "max": 34897919
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 2400000,
+        "p50": 829,
+        "p95": 1759,
+        "p99": 1961,
+        "p999": 2083,
+        "max": 12679
+      },
+      "harness_cpu": 0.2722927683203772,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "foreign": 2440,
+        "unsent": 0
+      }
+    }
+  ],
+  "derived": {
+    "max_sustainable_rate": 100.0
+  }
+}

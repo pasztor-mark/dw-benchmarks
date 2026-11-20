@@ -1,0 +1,67 @@
+server_name: bench.local
+pid_file: /tmp/homeserver.pid
+listeners:
+  - port: 8008
+    type: http
+    x_forwarded: true
+    resources:
+      - names: [client]
+  - port: 9093
+    type: http
+    resources:
+      - names: [replication]
+database:
+  name: psycopg2
+  args:
+    user: synapse
+    database: synapse
+    host: postgres
+    cp_min: 5
+    cp_max: 10
+redis:
+  enabled: true
+  host: redis
+instance_map:
+  main:
+    host: synapse
+    port: 9093
+  sync1:
+    host: sync1
+    port: 9093
+  sync2:
+    host: sync2
+    port: 9093
+  client1:
+    host: client1
+    port: 9093
+  persister1:
+    host: persister1
+    port: 9093
+stream_writers:
+  events: [persister1]
+enable_registration: false
+registration_shared_secret_path: /keys/registration_shared_secret
+bcrypt_rounds: 4
+presence:
+  enabled: true
+federation_domain_whitelist: []
+media_store_path: /data/media_store
+signing_key_path: /data/signing.key
+log_config: /conf/log.config
+report_stats: false
+suppress_key_server_warning: true
+trusted_key_servers: []
+rc_message: {per_second: 100000, burst_count: 100000}
+rc_login:
+  address: {per_second: 100000, burst_count: 100000}
+  account: {per_second: 100000, burst_count: 100000}
+  failed_attempts: {per_second: 100000, burst_count: 100000}
+rc_registration: {per_second: 100000, burst_count: 100000}
+rc_joins:
+  local: {per_second: 100000, burst_count: 100000}
+  remote: {per_second: 100000, burst_count: 100000}
+rc_joins_per_room: {per_second: 100000, burst_count: 100000}
+rc_invites:
+  per_room: {per_second: 100000, burst_count: 100000}
+  per_user: {per_second: 100000, burst_count: 100000}
+  per_issuer: {per_second: 100000, burst_count: 100000}

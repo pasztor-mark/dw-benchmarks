@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "target": "tinode",
+  "variant": null,
+  "scenario": "reconnect-storm",
+  "disk": "crypt",
+  "rep": 2,
+  "local": false,
+  "smoke": false,
+  "steps": [
+    {
+      "index": 0,
+      "label": "restart",
+      "params": {
+        "rate_per_room": 1.0,
+        "users": 10000
+      },
+      "started_at": "2026-11-17T06:37:32.908921387Z",
+      "ended_at": "2026-11-17T06:39:32.938671369Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 0,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 288,
+      "latency_us": {
+        "count": 9712,
+        "p50": 12951551,
+        "p95": 25116671,
+        "p99": 47710207,
+        "p999": 63373311,
+        "max": 66256895
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "harness_cpu": 0.04011035930203965,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "first_delivery_ms": 12268,
+        "never_recovered": 288,
+        "t100_ms": null,
+        "t99_ms": null
+      }
+    }
+  ],
+  "derived": {
+    "max_sustainable_rate": null
+  }
+}

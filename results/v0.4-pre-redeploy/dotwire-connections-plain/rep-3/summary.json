@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "target": "dotwire",
+  "variant": null,
+  "scenario": "connections",
+  "disk": "plain",
+  "rep": 3,
+  "local": false,
+  "smoke": false,
+  "steps": [
+    {
+      "index": 0,
+      "label": "level=10000",
+      "params": {
+        "connect_rate": 500,
+        "hold_s": 60,
+        "level": 10000
+      },
+      "started_at": "2026-11-16T23:43:33.525905790Z",
+      "ended_at": "2026-11-16T23:44:53.536344902Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 0,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 10000,
+        "p50": 9487,
+        "p95": 18383,
+        "p99": 95039,
+        "p999": 136063,
+        "max": 160767
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 10000,
+        "p50": 773,
+        "p95": 1440,
+        "p99": 1608,
+        "p999": 1830,
+        "max": 2527
+      },
+      "harness_cpu": 0.32118688196490475,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "connected": 10000,
+        "failed": 0,
+        "level": 10000
+      }
+    },
+    {
+      "index": 1,
+      "label": "level=25000",
+      "params": {
+        "connect_rate": 500,
+        "hold_s": 60,
+        "level": 25000
+      },
+      "started_at": "2026-11-16T23:44:53.539374392Z",
+      "ended_at": "2026-11-16T23:46:23.552323174Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 0,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 15000,
+        "p50": 9895,
+        "p95": 47999,
+        "p99": 252799,
+        "p999": 467199,
+        "max": 498687
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 15000,
+        "p50": 312,
+        "p95": 984,
+        "p99": 1155,
+        "p999": 1402,
+        "max": 2657
+      },
+      "harness_cpu": 0.35647357803213603,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "connected": 25000,
+        "failed": 0,
+        "level": 25000
+      }
+    },
+    {
+      "index": 2,
+      "label": "level=50000",
+      "params": {
+        "connect_rate": 500,
+        "hold_s": 60,
+        "level": 50000
+      },
+      "started_at": "2026-11-16T23:46:23.557140855Z",
+      "ended_at": "2026-11-16T23:48:13.566834270Z",
+      "sent": 0,
+      "expected": 0,
+      "received": 0,
+      "lost": 0,
+      "duplicates": 0,
+      "errors": 0,
+      "latency_us": {
+        "count": 25000,
+        "p50": 9823,
+        "p95": 82751,
+        "p99": 344063,
+        "p999": 723967,
+        "max": 767999
+      },
+      "service_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "ack_us": {
+        "count": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "max": 0
+      },
+      "sched_lag_us": {
+        "count": 25000,
+        "p50": 540,
+        "p95": 1201,
+        "p99": 1376,
+        "p999": 1660,
+        "max": 3893
+      },
+      "harness_cpu": 0.3905437542118796,
+      "saturated": false,
+      "invalid": false,
+      "invalid_reasons": [],
+      "extra": {
+        "connected": 50000,
+        "failed": 0,
+        "level": 50000
+      }
+    }
+  ],
+  "derived": {
+    "max_sustainable_rate": null
+  }
+}

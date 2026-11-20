@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+DIST="$ROOT/report/dist"
+DWBENCH="$ROOT/harness/target/debug/dwbench"
+SIZES="1200x627 1600x900"
+CARDS="setup latency throughput fanout connections reconnect history features encryption raw reproduction"
+
+if [ "${1:-}" = "--png" ]; then
+  [ -f "$DIST/index.html" ] || { echo "report/build: build the page first (report/build <campaign-dir>)" >&2; exit 1; }
+  mkdir -p "$DIST/png"
+  for card in $CARDS; do
+    for size in $SIZES; do
+      w="${size%x*}"
+      h="${size#*x}"
+      agent-browser set viewport "$w" "$h" >/dev/null
+      agent-browser open "file://$DIST/index.html?card=$card" >/dev/null
+      agent-browser wait --fn "document.body.getAttribute('data-ready') === '1'" >/dev/null
+      agent-browser screenshot "$DIST/png/$card-$size.png" >/dev/null
+      echo "png: $DIST/png/$card-$size.png"
+    done
+  done
+  agent-browser close >/dev/null 2>&1 || true
+  exit 0
+fi
+
+campaign="${1:?usage: report/build <campaign-dir> | report/build --png}"
+campaign="$(cd "$campaign" && pwd)"
+
+if [ ! -x "$DWBENCH" ]; then
+  cargo build --quiet --manifest-path "$ROOT/harness/Cargo.toml"
+fi
+
+mkdir -p "$DIST"
+rm -rf "$DIST/png"
+"$DWBENCH" aggregate --results "$campaign" --out "$DIST/results.json"
+sed 's#</#<\\/#g' "$DIST/results.json" > "$DIST/.results-inline.json"
+sed -e "/^__DATA__\$/r $DIST/.results-inline.json" -e '/^__DATA__$/d' "$ROOT/report/index.html" > "$DIST/index.html"
+rm -f "$DIST/.results-inline.json"
+echo "report: $DIST/index.html"

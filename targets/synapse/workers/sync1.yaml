@@ -1,0 +1,13 @@
+worker_app: synapse.app.generic_worker
+worker_name: sync1
+worker_log_config: /conf/log.config
+worker_listeners:
+  - type: http
+    port: 8083
+    x_forwarded: true
+    resources:
+      - names: [client]
+  - type: http
+    port: 9093
+    resources:
+      - names: [replication]

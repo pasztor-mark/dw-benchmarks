@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, its data or its results, please cite it as below."
+type: dataset
+title: "dotwire vs Tinode: realtime chat server benchmark (dotwire 0.4.1, Tinode 0.25.3)"
+abstract: >-
+  Open-loop benchmark harness, raw results and case-study notebook comparing the
+  dotwire realtime chat server (0.4.1, with a 0.4.0 baseline) against Tinode 0.25.3
+  on two Hetzner Cloud CCX33 servers: latency ladder, fan-out, connections,
+  reconnect storm and history reads. An untuned Synapse attempt is included as an
+  appendix and excluded from every comparison.
+authors:
+  - family-names: Pásztor
+    given-names: Márk
+    website: "https://www.pasztormark.dev"
+repository-code: "https://github.com/pasztor-mark/dw-benchmarks"
+url: "https://dotwire.pasztormark.dev/docs/benchmarks"
+keywords:
+  - benchmark
+  - realtime
+  - chat
+  - signalr
+  - websocket

@@ -1,0 +1,1275 @@
+[Mon Nov 16 21:34:26 2026] Linux version 7.0.0-30-generic (buildd@lcy02-amd64-048) (x86_64-linux-gnu-gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, GNU ld (GNU Binutils for Ubuntu) 2.46) #30-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 18:22:54 UTC 2026 (Ubuntu 7.0.0-30.30-generic 7.0.12)
+[Mon Nov 16 21:34:26 2026] Command line: BOOT_IMAGE=/boot/vmlinuz-7.0.0-30-generic root=UUID=9e4ec673-4345-4852-8a69-0f7f3df29989 ro consoleblank=0 systemd.show_status=true console=tty1 console=ttyS0
+[Mon Nov 16 21:34:26 2026] KERNEL supported cpus:
+[Mon Nov 16 21:34:26 2026]   Intel GenuineIntel
+[Mon Nov 16 21:34:26 2026]   AMD AuthenticAMD
+[Mon Nov 16 21:34:26 2026]   Hygon HygonGenuine
+[Mon Nov 16 21:34:26 2026]   Centaur CentaurHauls
+[Mon Nov 16 21:34:26 2026]   zhaoxin   Shanghai  
+[Mon Nov 16 21:34:26 2026] BIOS-provided physical RAM map:
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff]  System RAM
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [gap 0x00000000000a0000-0x00000000000fffff]
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x0000000000100000-0x000000007ed3efff]  System RAM
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000007ed3f000-0x000000007edfffff]  device reserved
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000007ee00000-0x000000007f8ecfff]  System RAM
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000007f8ed000-0x000000007fb6cfff]  device reserved
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000007fb6d000-0x000000007fb7efff]  ACPI data
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000007fb7f000-0x000000007fbfefff]  ACPI NVS
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000007fbff000-0x000000007ff7bfff]  System RAM
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000007ff7c000-0x000000007fffffff]  device reserved
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [gap 0x0000000080000000-0x00000000dfffffff]
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff]  device reserved
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [gap 0x00000000f0000000-0x00000000feffbfff]
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff]  device reserved
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [gap 0x00000000ff000000-0x00000000ffbfffff]
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x00000000ffc00000-0x00000000ffffffff]  device reserved
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x0000000100000000-0x000000084fffffff]  System RAM
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [gap 0x0000000850000000-0x000000fcffffffff]
+[Mon Nov 16 21:34:26 2026] BIOS-e820: [mem 0x000000fd00000000-0x000000ffffffffff]  device reserved
+[Mon Nov 16 21:34:26 2026] NX (Execute Disable) protection: active
+[Mon Nov 16 21:34:26 2026] APIC: Static calls initialized
+[Mon Nov 16 21:34:26 2026] efi: EFI v2.7 by Ubuntu distribution of EDK II
+[Mon Nov 16 21:34:26 2026] efi: SMBIOS=0x7f988000 SMBIOS 3.0=0x7f986000 ACPI=0x7fb7e000 ACPI 2.0=0x7fb7e014 MEMATTR=0x7e11c118 INITRD=0x7e107e98 RNG=0x7fb73018 
+[Mon Nov 16 21:34:26 2026] random: crng init done
+[Mon Nov 16 21:34:26 2026] efi: Remove mem132: MMIO range=[0xffc00000-0xffffffff] (4MB) from e820 map
+[Mon Nov 16 21:34:26 2026] e820: remove [mem 0xffc00000-0xffffffff] device reserved
+[Mon Nov 16 21:34:26 2026] SMBIOS 3.0.0 present.
+[Mon Nov 16 21:34:26 2026] DMI: Hetzner vServer/Standard PC (Q35 + ICH9, 2009), BIOS 20171111 11/11/2017
+[Mon Nov 16 21:34:26 2026] DMI: Memory slots populated: 2/2
+[Mon Nov 16 21:34:26 2026] secureboot: Secure boot disabled
+[Mon Nov 16 21:34:26 2026] Hypervisor detected: KVM
+[Mon Nov 16 21:34:26 2026] last_pfn = 0x7ff7c max_arch_pfn = 0x400000000
+[Mon Nov 16 21:34:26 2026] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[Mon Nov 16 21:34:26 2026] kvm-clock: using sched offset of 7362642987 cycles
+[Mon Nov 16 21:34:26 2026] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[Mon Nov 16 21:34:26 2026] tsc: Detected 2400.000 MHz processor
+[Mon Nov 16 21:34:26 2026] e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+[Mon Nov 16 21:34:26 2026] e820: remove [mem 0x000a0000-0x000fffff] System RAM
+[Mon Nov 16 21:34:26 2026] last_pfn = 0x850000 max_arch_pfn = 0x400000000
+[Mon Nov 16 21:34:26 2026] MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+[Mon Nov 16 21:34:26 2026] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[Mon Nov 16 21:34:26 2026] last_pfn = 0x7ff7c max_arch_pfn = 0x400000000
+[Mon Nov 16 21:34:26 2026] Using GB pages for direct mapping
+[Mon Nov 16 21:34:26 2026] secureboot: Secure boot disabled
+[Mon Nov 16 21:34:26 2026] RAMDISK: [mem 0x774ea000-0x78f12fff]
+[Mon Nov 16 21:34:26 2026] ACPI: Early table checksum verification disabled
+[Mon Nov 16 21:34:26 2026] ACPI: RSDP 0x000000007FB7E014 000024 (v02 BOCHS )
+[Mon Nov 16 21:34:26 2026] ACPI: XSDT 0x000000007FB7D0E8 000054 (v01 BOCHS  BXPC     00000001      01000013)
+[Mon Nov 16 21:34:26 2026] ACPI: FACP 0x000000007FB79000 0000F4 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[Mon Nov 16 21:34:26 2026] ACPI: DSDT 0x000000007FB7A000 002642 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[Mon Nov 16 21:34:26 2026] ACPI: FACS 0x000000007FBDD000 000040
+[Mon Nov 16 21:34:26 2026] ACPI: APIC 0x000000007FB78000 0000B0 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[Mon Nov 16 21:34:26 2026] ACPI: HPET 0x000000007FB77000 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[Mon Nov 16 21:34:26 2026] ACPI: MCFG 0x000000007FB76000 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[Mon Nov 16 21:34:26 2026] ACPI: WAET 0x000000007FB75000 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[Mon Nov 16 21:34:26 2026] ACPI: BGRT 0x000000007FB74000 000038 (v01 INTEL  EDK2     00000002      01000013)
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving FACP table memory at [mem 0x7fb79000-0x7fb790f3]
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving DSDT table memory at [mem 0x7fb7a000-0x7fb7c641]
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving FACS table memory at [mem 0x7fbdd000-0x7fbdd03f]
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving APIC table memory at [mem 0x7fb78000-0x7fb780af]
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving HPET table memory at [mem 0x7fb77000-0x7fb77037]
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving MCFG table memory at [mem 0x7fb76000-0x7fb7603b]
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving WAET table memory at [mem 0x7fb75000-0x7fb75027]
+[Mon Nov 16 21:34:26 2026] ACPI: Reserving BGRT table memory at [mem 0x7fb74000-0x7fb74037]
+[Mon Nov 16 21:34:26 2026] No NUMA configuration found
+[Mon Nov 16 21:34:26 2026] Faking a node at [mem 0x0000000000000000-0x000000084fffffff]
+[Mon Nov 16 21:34:26 2026] NODE_DATA(0) allocated [mem 0x84ffd3280-0x84fffdfff]
+[Mon Nov 16 21:34:26 2026] ACPI: PM-Timer IO Port: 0x608
+[Mon Nov 16 21:34:26 2026] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[Mon Nov 16 21:34:26 2026] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[Mon Nov 16 21:34:26 2026] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[Mon Nov 16 21:34:26 2026] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[Mon Nov 16 21:34:26 2026] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[Mon Nov 16 21:34:26 2026] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[Mon Nov 16 21:34:26 2026] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[Mon Nov 16 21:34:26 2026] ACPI: Using ACPI (MADT) for SMP configuration information
+[Mon Nov 16 21:34:26 2026] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[Mon Nov 16 21:34:26 2026] e820: update [mem 0x7e113000-0x7e11bfff] System RAM ==> device reserved
+[Mon Nov 16 21:34:26 2026] CPU topo: Max. logical packages:   1
+[Mon Nov 16 21:34:26 2026] CPU topo: Max. logical nodes:      1
+[Mon Nov 16 21:34:26 2026] CPU topo: Num. nodes per package:  1
+[Mon Nov 16 21:34:26 2026] CPU topo: Max. logical dies:       1
+[Mon Nov 16 21:34:26 2026] CPU topo: Max. dies per package:   1
+[Mon Nov 16 21:34:26 2026] CPU topo: Max. threads per core:   2
+[Mon Nov 16 21:34:26 2026] CPU topo: Num. cores per package:     4
+[Mon Nov 16 21:34:26 2026] CPU topo: Num. threads per package:   8
+[Mon Nov 16 21:34:26 2026] CPU topo: Allowing 8 present CPUs plus 0 hotplug CPUs
+[Mon Nov 16 21:34:26 2026] kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+[Mon Nov 16 21:34:26 2026] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[Mon Nov 16 21:34:26 2026] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[Mon Nov 16 21:34:26 2026] PM: hibernation: Registered nosave memory: [mem 0x7e113000-0x7e11bfff]
+[Mon Nov 16 21:34:26 2026] PM: hibernation: Registered nosave memory: [mem 0x7ed3f000-0x7edfffff]
+[Mon Nov 16 21:34:26 2026] PM: hibernation: Registered nosave memory: [mem 0x7f8ed000-0x7fbfefff]
+[Mon Nov 16 21:34:26 2026] PM: hibernation: Registered nosave memory: [mem 0x7ff7c000-0xffffffff]
+[Mon Nov 16 21:34:26 2026] [gap 0x80000000-0xdfffffff] available for PCI devices
+[Mon Nov 16 21:34:26 2026] Booting paravirtualized kernel on KVM
+[Mon Nov 16 21:34:26 2026] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[Mon Nov 16 21:34:26 2026] Zone ranges:
+[Mon Nov 16 21:34:26 2026]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[Mon Nov 16 21:34:26 2026]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[Mon Nov 16 21:34:26 2026]   Normal   [mem 0x0000000100000000-0x000000084fffffff]
+[Mon Nov 16 21:34:26 2026]   Device   empty
+[Mon Nov 16 21:34:26 2026] Movable zone start for each node
+[Mon Nov 16 21:34:26 2026] Early memory node ranges
+[Mon Nov 16 21:34:26 2026]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+[Mon Nov 16 21:34:26 2026]   node   0: [mem 0x0000000000100000-0x000000007ed3efff]
+[Mon Nov 16 21:34:26 2026]   node   0: [mem 0x000000007ee00000-0x000000007f8ecfff]
+[Mon Nov 16 21:34:26 2026]   node   0: [mem 0x000000007fbff000-0x000000007ff7bfff]
+[Mon Nov 16 21:34:26 2026]   node   0: [mem 0x0000000100000000-0x000000084fffffff]
+[Mon Nov 16 21:34:26 2026] Initmem setup node 0 [mem 0x0000000000001000-0x000000084fffffff]
+[Mon Nov 16 21:34:26 2026] On node 0, zone DMA: 1 pages in unavailable ranges
+[Mon Nov 16 21:34:26 2026] On node 0, zone DMA: 96 pages in unavailable ranges
+[Mon Nov 16 21:34:27 2026] On node 0, zone DMA32: 193 pages in unavailable ranges
+[Mon Nov 16 21:34:27 2026] On node 0, zone DMA32: 786 pages in unavailable ranges
+[Mon Nov 16 21:34:27 2026] On node 0, zone Normal: 132 pages in unavailable ranges
+[Mon Nov 16 21:34:27 2026] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[Mon Nov 16 21:34:27 2026] percpu: Embedded 85 pages/cpu s225280 r8192 d114688 u524288
+[Mon Nov 16 21:34:27 2026] pcpu-alloc: s225280 r8192 d114688 u524288 alloc=1*2097152
+[Mon Nov 16 21:34:27 2026] pcpu-alloc: [0] 0 1 2 3 [0] 4 5 6 7 
+[Mon Nov 16 21:34:27 2026] kvm-guest: PV spinlocks disabled, no host support
+[Mon Nov 16 21:34:27 2026] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-7.0.0-30-generic root=UUID=9e4ec673-4345-4852-8a69-0f7f3df29989 ro consoleblank=0 systemd.show_status=true console=tty1 console=ttyS0
+[Mon Nov 16 21:34:27 2026] printk: log buffer data + meta data: 262144 + 1114112 = 1376256 bytes
+[Mon Nov 16 21:34:27 2026] Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+[Mon Nov 16 21:34:27 2026] Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+[Mon Nov 16 21:34:27 2026] software IO TLB: area num 8.
+[Mon Nov 16 21:34:27 2026] Fallback order for Node 0: 0 
+[Mon Nov 16 21:34:27 2026] Built 1 zonelists, mobility grouping on.  Total pages: 8190792
+[Mon Nov 16 21:34:27 2026] Policy zone: Normal
+[Mon Nov 16 21:34:27 2026] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[Mon Nov 16 21:34:27 2026] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[Mon Nov 16 21:34:27 2026] ftrace: allocating 63941 entries in 252 pages
+[Mon Nov 16 21:34:27 2026] ftrace: allocated 252 pages with 6 groups
+[Mon Nov 16 21:34:27 2026] Dynamic Preempt: lazy
+[Mon Nov 16 21:34:27 2026] rcu: Preemptible hierarchical RCU implementation.
+[Mon Nov 16 21:34:27 2026] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[Mon Nov 16 21:34:27 2026] 	Trampoline variant of Tasks RCU enabled.
+[Mon Nov 16 21:34:27 2026] 	Rude variant of Tasks RCU enabled.
+[Mon Nov 16 21:34:27 2026] 	Tracing variant of Tasks RCU enabled.
+[Mon Nov 16 21:34:27 2026] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[Mon Nov 16 21:34:27 2026] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[Mon Nov 16 21:34:27 2026] RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[Mon Nov 16 21:34:27 2026] RCU Tasks Rude: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[Mon Nov 16 21:34:27 2026] NR_IRQS: 524544, nr_irqs: 488, preallocated irqs: 16
+[Mon Nov 16 21:34:27 2026] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[Mon Nov 16 21:34:27 2026] Console: colour dummy device 80x25
+[Mon Nov 16 21:34:27 2026] printk: legacy console [tty1] enabled
+[Mon Nov 16 21:34:27 2026] printk: legacy console [ttyS0] enabled
+[Mon Nov 16 21:34:27 2026] ACPI: Core revision 20251212
+[Mon Nov 16 21:34:27 2026] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[Mon Nov 16 21:34:27 2026] APIC: Switch to symmetric I/O mode setup
+[Mon Nov 16 21:34:27 2026] x2apic enabled
+[Mon Nov 16 21:34:27 2026] APIC: Switched APIC routing to: physical x2apic
+[Mon Nov 16 21:34:27 2026] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[Mon Nov 16 21:34:27 2026] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x22983777dd9, max_idle_ns: 440795300422 ns
+[Mon Nov 16 21:34:27 2026] Calibrating delay loop (skipped) preset value.. 4800.00 BogoMIPS (lpj=2400000)
+[Mon Nov 16 21:34:27 2026] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[Mon Nov 16 21:34:27 2026] Last level iTLB entries: 4KB 512, 2MB 255, 4MB 127
+[Mon Nov 16 21:34:27 2026] Last level dTLB entries: 4KB 512, 2MB 255, 4MB 127, 1GB 0
+[Mon Nov 16 21:34:27 2026] mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+[Mon Nov 16 21:34:27 2026] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[Mon Nov 16 21:34:27 2026] Speculative Return Stack Overflow: IBPB-extending microcode not applied!
+[Mon Nov 16 21:34:27 2026] Speculative Return Stack Overflow: WARNING: See https://kernel.org/doc/html/latest/admin-guide/hw-vuln/srso.html for mitigation options.
+[Mon Nov 16 21:34:27 2026] Transient Scheduler Attacks: Vulnerable: No microcode
+[Mon Nov 16 21:34:27 2026] Spectre V2 : Mitigation: Retpolines
+[Mon Nov 16 21:34:27 2026] Spectre V2 : User space: Mitigation: STIBP via prctl
+[Mon Nov 16 21:34:27 2026] Speculative Return Stack Overflow: Vulnerable: Safe RET, no microcode
+[Mon Nov 16 21:34:27 2026] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[Mon Nov 16 21:34:27 2026] Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+[Mon Nov 16 21:34:27 2026] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[Mon Nov 16 21:34:27 2026] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[Mon Nov 16 21:34:27 2026] active return thunk: srso_alias_return_thunk
+[Mon Nov 16 21:34:27 2026] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[Mon Nov 16 21:34:27 2026] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[Mon Nov 16 21:34:27 2026] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[Mon Nov 16 21:34:27 2026] x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[Mon Nov 16 21:34:27 2026] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[Mon Nov 16 21:34:27 2026] x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+[Mon Nov 16 21:34:27 2026] x86/fpu: Enabled xstate features 0x207, context size is 840 bytes, using 'compacted' format.
+[Mon Nov 16 21:34:27 2026] Freeing SMP alternatives memory: 56K
+[Mon Nov 16 21:34:27 2026] pid_max: default: 32768 minimum: 301
+[Mon Nov 16 21:34:27 2026] landlock: Up and running.
+[Mon Nov 16 21:34:27 2026] Yama: becoming mindful.
+[Mon Nov 16 21:34:27 2026] AppArmor: AppArmor initialized
+[Mon Nov 16 21:34:27 2026] AppArmor: AppArmor secmark mediation reserved: ready to be enabled
+[Mon Nov 16 21:34:27 2026] Mount-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[Mon Nov 16 21:34:27 2026] Mountpoint-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[Mon Nov 16 21:34:27 2026] VFS: Finished mounting rootfs on nullfs
+[Mon Nov 16 21:34:27 2026] smpboot: CPU0: AMD EPYC-Milan Processor (family: 0x19, model: 0x1, stepping: 0x1)
+[Mon Nov 16 21:34:27 2026] Performance Events: Fam17h+ core perfctr, AMD PMU driver.
+[Mon Nov 16 21:34:27 2026] ... version:                   0
+[Mon Nov 16 21:34:27 2026] ... bit width:                 48
+[Mon Nov 16 21:34:27 2026] ... generic counters:          6
+[Mon Nov 16 21:34:27 2026] ... generic bitmap:            000000000000003f
+[Mon Nov 16 21:34:27 2026] ... fixed-purpose counters:    0
+[Mon Nov 16 21:34:27 2026] ... fixed-purpose bitmap:      0000000000000000
+[Mon Nov 16 21:34:27 2026] ... value mask:                0000ffffffffffff
+[Mon Nov 16 21:34:27 2026] ... max period:                00007fffffffffff
+[Mon Nov 16 21:34:27 2026] ... global_ctrl mask:          000000000000003f
+[Mon Nov 16 21:34:27 2026] signal: max sigframe size: 3376
+[Mon Nov 16 21:34:27 2026] rcu: Hierarchical SRCU implementation.
+[Mon Nov 16 21:34:27 2026] rcu: 	Max phase no-delay instances is 400.
+[Mon Nov 16 21:34:27 2026] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[Mon Nov 16 21:34:27 2026] smp: Bringing up secondary CPUs ...
+[Mon Nov 16 21:34:27 2026] smpboot: x86: Booting SMP configuration:
+[Mon Nov 16 21:34:27 2026] .... node  #0, CPUs:      #2 #4 #6 #1 #3 #5 #7
+[Mon Nov 16 21:34:27 2026] smp: Brought up 1 node, 8 CPUs
+[Mon Nov 16 21:34:27 2026] smpboot: Total of 8 processors activated (38400.00 BogoMIPS)
+[Mon Nov 16 21:34:27 2026] Memory: 29360212K/32763168K available (23799K kernel code, 4952K rwdata, 16764K rodata, 5292K init, 5856K bss, 3391440K reserved, 0K cma-reserved)
+[Mon Nov 16 21:34:27 2026] devtmpfs: initialized
+[Mon Nov 16 21:34:27 2026] x86/mm: Memory block size: 128MB
+[Mon Nov 16 21:34:27 2026] ACPI: PM: Registering ACPI NVS region [mem 0x7fb7f000-0x7fbfefff] (524288 bytes)
+[Mon Nov 16 21:34:27 2026] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[Mon Nov 16 21:34:27 2026] posixtimers hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[Mon Nov 16 21:34:27 2026] futex hash table entries: 2048 (131072 bytes on 1 NUMA nodes, total 128 KiB, linear).
+[Mon Nov 16 21:34:27 2026] PM: RTC time: 21:34:27, date: 2026-11-16
+[Mon Nov 16 21:34:27 2026] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[Mon Nov 16 21:34:27 2026] DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+[Mon Nov 16 21:34:27 2026] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[Mon Nov 16 21:34:27 2026] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[Mon Nov 16 21:34:27 2026] audit: initializing netlink subsys (disabled)
+[Mon Nov 16 21:34:27 2026] audit: type=2000 audit(1794864867.021:1): state=initialized audit_enabled=0 res=1
+[Mon Nov 16 21:34:27 2026] thermal_sys: Registered thermal governor 'fair_share'
+[Mon Nov 16 21:34:27 2026] thermal_sys: Registered thermal governor 'bang_bang'
+[Mon Nov 16 21:34:27 2026] thermal_sys: Registered thermal governor 'step_wise'
+[Mon Nov 16 21:34:27 2026] thermal_sys: Registered thermal governor 'user_space'
+[Mon Nov 16 21:34:27 2026] thermal_sys: Registered thermal governor 'power_allocator'
+[Mon Nov 16 21:34:27 2026] cpuidle: using governor ladder
+[Mon Nov 16 21:34:27 2026] cpuidle: using governor menu
+[Mon Nov 16 21:34:27 2026] efi: Freeing EFI boot services memory: 33916K
+[Mon Nov 16 21:34:27 2026] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[Mon Nov 16 21:34:27 2026] PCI: ECAM [mem 0xe0000000-0xefffffff] (base 0xe0000000) for domain 0000 [bus 00-ff]
+[Mon Nov 16 21:34:27 2026] PCI: Using configuration type 1 for base access
+[Mon Nov 16 21:34:27 2026] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[Mon Nov 16 21:34:27 2026] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[Mon Nov 16 21:34:27 2026] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[Mon Nov 16 21:34:27 2026] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[Mon Nov 16 21:34:27 2026] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[Mon Nov 16 21:34:27 2026] fbcon: Taking over console
+[Mon Nov 16 21:34:27 2026] ACPI: Added _OSI(Module Device)
+[Mon Nov 16 21:34:27 2026] ACPI: Added _OSI(Processor Device)
+[Mon Nov 16 21:34:27 2026] ACPI: Added _OSI(Processor Aggregator Device)
+[Mon Nov 16 21:34:27 2026] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[Mon Nov 16 21:34:27 2026] ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+[Mon Nov 16 21:34:27 2026] ACPI: Interpreter enabled
+[Mon Nov 16 21:34:27 2026] ACPI: PM: (supports S0 S5)
+[Mon Nov 16 21:34:27 2026] ACPI: Using IOAPIC for interrupt routing
+[Mon Nov 16 21:34:27 2026] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[Mon Nov 16 21:34:27 2026] PCI: Using E820 reservations for host bridge windows
+[Mon Nov 16 21:34:27 2026] ACPI: Enabled 2 GPEs in block 00 to 3F
+[Mon Nov 16 21:34:27 2026] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[Mon Nov 16 21:34:27 2026] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[Mon Nov 16 21:34:27 2026] acpi PNP0A08:00: _OSC: platform does not support [PCIeHotplug LTR DPC]
+[Mon Nov 16 21:34:27 2026] acpi PNP0A08:00: _OSC: OS now controls [SHPCHotplug PME AER PCIeCapability]
+[Mon Nov 16 21:34:27 2026] PCI host bridge to bus 0000:00
+[Mon Nov 16 21:34:27 2026] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[Mon Nov 16 21:34:27 2026] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[Mon Nov 16 21:34:27 2026] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[Mon Nov 16 21:34:27 2026] pci_bus 0000:00: root bus resource [mem 0x80000000-0xdfffffff window]
+[Mon Nov 16 21:34:27 2026] pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfebfffff window]
+[Mon Nov 16 21:34:27 2026] pci_bus 0000:00: root bus resource [mem 0xc000000000-0xc7ffffffff window]
+[Mon Nov 16 21:34:27 2026] pci_bus 0000:00: root bus resource [bus 00-ff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:00.0: [8086:29c0] type 00 class 0x060000 conventional PCI endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:00:01.0: [1af4:1050] type 00 class 0x030000 conventional PCI endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:00:01.0: BAR 0 [mem 0x80000000-0x807fffff pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:01.0: BAR 2 [mem 0xc060500000-0xc060503fff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:01.0: BAR 4 [mem 0x8138a000-0x8138afff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:01.0: ROM [mem 0xffff0000-0xffffffff pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:01.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.0: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.0: BAR 0 [mem 0x81389000-0x81389fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.0: PCI bridge to [bus 01]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.0:   bridge window [mem 0x81200000-0x812fffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.0:   bridge window [mem 0xc060000000-0xc0600fffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.1: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.1: BAR 0 [mem 0x81388000-0x81388fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.1: PCI bridge to [bus 02]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.1:   bridge window [mem 0x81100000-0x811fffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.2: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.2: BAR 0 [mem 0x81387000-0x81387fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.2: PCI bridge to [bus 03]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.2:   bridge window [mem 0x81000000-0x810fffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.2:   bridge window [mem 0xc060100000-0xc0601fffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.3: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.3: BAR 0 [mem 0x81386000-0x81386fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.3: PCI bridge to [bus 04]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.3:   bridge window [mem 0xc060200000-0xc0602fffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.4: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.4: BAR 0 [mem 0x81385000-0x81385fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.4: PCI bridge to [bus 05]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.4:   bridge window [mem 0x80f00000-0x80ffffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.4:   bridge window [mem 0xc060300000-0xc0603fffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.5: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.5: BAR 0 [mem 0x81384000-0x81384fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.5: PCI bridge to [bus 06]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.5:   bridge window [mem 0x80e00000-0x80efffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.5:   bridge window [mem 0xc060400000-0xc0604fffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.6: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.6: BAR 0 [mem 0x81383000-0x81383fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.6: PCI bridge to [bus 07]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.6:   bridge window [mem 0x80c00000-0x80dfffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.6:   bridge window [mem 0xc000000000-0xc01fffffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.7: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.7: BAR 0 [mem 0x81382000-0x81382fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.7: PCI bridge to [bus 08]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.7:   bridge window [mem 0x80a00000-0x80bfffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.7:   bridge window [mem 0xc020000000-0xc03fffffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:03.0: [1b36:000c] type 01 class 0x060400 PCIe Root Port
+[Mon Nov 16 21:34:27 2026] pci 0000:00:03.0: BAR 0 [mem 0x81381000-0x81381fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:03.0: PCI bridge to [bus 09]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:03.0:   bridge window [mem 0x80800000-0x809fffff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:03.0:   bridge window [mem 0xc040000000-0xc05fffffff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:1f.0: [8086:2918] type 00 class 0x060100 conventional PCI endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:00:1f.0: quirk: [io  0x0600-0x067f] claimed by ICH6 ACPI/GPIO/TCO
+[Mon Nov 16 21:34:27 2026] pci 0000:00:1f.2: [8086:2922] type 00 class 0x010601 conventional PCI endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:00:1f.2: BAR 4 [io  0x6040-0x605f]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:1f.2: BAR 5 [mem 0x81380000-0x81380fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:1f.3: [8086:2930] type 00 class 0x0c0500 conventional PCI endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:00:1f.3: BAR 4 [io  0x6000-0x603f]
+[Mon Nov 16 21:34:27 2026] pci 0000:01:00.0: [1af4:1041] type 00 class 0x020000 PCIe Endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:01:00.0: BAR 1 [mem 0x81200000-0x81200fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:01:00.0: BAR 4 [mem 0xc060000000-0xc060003fff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:01:00.0: ROM [mem 0xfff80000-0xffffffff pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.0: PCI bridge to [bus 01]
+[Mon Nov 16 21:34:27 2026] pci 0000:02:00.0: [1b36:000d] type 00 class 0x0c0330 PCIe Endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:02:00.0: BAR 0 [mem 0x81100000-0x81103fff 64bit]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.1: PCI bridge to [bus 02]
+[Mon Nov 16 21:34:27 2026] pci 0000:03:00.0: [1af4:1043] type 00 class 0x078000 PCIe Endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:03:00.0: BAR 1 [mem 0x81000000-0x81000fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:03:00.0: BAR 4 [mem 0xc060100000-0xc060103fff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.2: PCI bridge to [bus 03]
+[Mon Nov 16 21:34:27 2026] pci 0000:04:00.0: [1af4:1045] type 00 class 0x00ff00 PCIe Endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:04:00.0: BAR 4 [mem 0xc060200000-0xc060203fff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.3: PCI bridge to [bus 04]
+[Mon Nov 16 21:34:27 2026] pci 0000:05:00.0: [1af4:1044] type 00 class 0x00ff00 PCIe Endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:05:00.0: BAR 1 [mem 0x80f00000-0x80f00fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:05:00.0: BAR 4 [mem 0xc060300000-0xc060303fff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.4: PCI bridge to [bus 05]
+[Mon Nov 16 21:34:27 2026] pci 0000:06:00.0: [1af4:1048] type 00 class 0x010000 PCIe Endpoint
+[Mon Nov 16 21:34:27 2026] pci 0000:06:00.0: BAR 1 [mem 0x80e00000-0x80e00fff]
+[Mon Nov 16 21:34:27 2026] pci 0000:06:00.0: BAR 4 [mem 0xc060400000-0xc060403fff 64bit pref]
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.5: PCI bridge to [bus 06]
+[Mon Nov 16 21:34:27 2026] acpiphp: Slot [0] registered
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.6: PCI bridge to [bus 07]
+[Mon Nov 16 21:34:27 2026] acpiphp: Slot [0-2] registered
+[Mon Nov 16 21:34:27 2026] pci 0000:00:02.7: PCI bridge to [bus 08]
+[Mon Nov 16 21:34:27 2026] acpiphp: Slot [0-3] registered
+[Mon Nov 16 21:34:27 2026] pci 0000:00:03.0: PCI bridge to [bus 09]
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKE configured for IRQ 10
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKF configured for IRQ 10
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKG configured for IRQ 11
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link LNKH configured for IRQ 11
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSIA configured for IRQ 16
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSIB configured for IRQ 17
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSIC configured for IRQ 18
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSID configured for IRQ 19
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSIE configured for IRQ 20
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSIF configured for IRQ 21
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSIG configured for IRQ 22
+[Mon Nov 16 21:34:27 2026] ACPI: PCI: Interrupt link GSIH configured for IRQ 23
+[Mon Nov 16 21:34:27 2026] iommu: Default domain type: Translated
+[Mon Nov 16 21:34:27 2026] iommu: DMA domain TLB invalidation policy: lazy mode
+[Mon Nov 16 21:34:27 2026] SCSI subsystem initialized
+[Mon Nov 16 21:34:27 2026] libata version 3.00 loaded.
+[Mon Nov 16 21:34:27 2026] ACPI: bus type USB registered
+[Mon Nov 16 21:34:27 2026] usbcore: registered new interface driver usbfs
+[Mon Nov 16 21:34:27 2026] usbcore: registered new interface driver hub
+[Mon Nov 16 21:34:27 2026] usbcore: registered new device driver usb
+[Mon Nov 16 21:34:27 2026] pps_core: LinuxPPS API ver. 1 registered
+[Mon Nov 16 21:34:27 2026] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[Mon Nov 16 21:34:27 2026] PTP clock support registered
+[Mon Nov 16 21:34:27 2026] EDAC MC: Ver: 3.0.0
+[Mon Nov 16 21:34:27 2026] efivars: Registered efivars operations
+[Mon Nov 16 21:34:27 2026] NetLabel: Initializing
+[Mon Nov 16 21:34:27 2026] NetLabel:  domain hash size = 128
+[Mon Nov 16 21:34:27 2026] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[Mon Nov 16 21:34:27 2026] NetLabel:  unlabeled traffic allowed by default
+[Mon Nov 16 21:34:27 2026] mctp: management component transport protocol core
+[Mon Nov 16 21:34:27 2026] NET: Registered PF_MCTP protocol family
+[Mon Nov 16 21:34:27 2026] PCI: Using ACPI for IRQ routing
+[Mon Nov 16 21:34:28 2026] PCI: pci_cache_line_size set to 64 bytes
+[Mon Nov 16 21:34:28 2026] e820: register RAM buffer resource [mem 0x7e113000-0x7fffffff]
+[Mon Nov 16 21:34:28 2026] e820: register RAM buffer resource [mem 0x7ed3f000-0x7fffffff]
+[Mon Nov 16 21:34:28 2026] e820: register RAM buffer resource [mem 0x7f8ed000-0x7fffffff]
+[Mon Nov 16 21:34:28 2026] e820: register RAM buffer resource [mem 0x7ff7c000-0x7fffffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:01.0: vgaarb: setting as boot VGA device
+[Mon Nov 16 21:34:28 2026] pci 0000:00:01.0: vgaarb: bridge control possible
+[Mon Nov 16 21:34:28 2026] pci 0000:00:01.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[Mon Nov 16 21:34:28 2026] vgaarb: loaded
+[Mon Nov 16 21:34:28 2026] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[Mon Nov 16 21:34:28 2026] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[Mon Nov 16 21:34:28 2026] clocksource: Switched to clocksource kvm-clock
+[Mon Nov 16 21:34:28 2026] VFS: Disk quotas dquot_6.6.0
+[Mon Nov 16 21:34:28 2026] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[Mon Nov 16 21:34:28 2026] AppArmor: AppArmor Filesystem Enabled
+[Mon Nov 16 21:34:28 2026] acpi PNP0C01:00: Reserved [mem 0xe0000000-0xefffffff]
+[Mon Nov 16 21:34:28 2026] pnp: PnP ACPI init
+[Mon Nov 16 21:34:28 2026] pnp: PnP ACPI: found 4 devices
+[Mon Nov 16 21:34:28 2026] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[Mon Nov 16 21:34:28 2026] NET: Registered PF_INET protocol family
+[Mon Nov 16 21:34:28 2026] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[Mon Nov 16 21:34:28 2026] tcp_listen_portaddr_hash hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[Mon Nov 16 21:34:28 2026] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[Mon Nov 16 21:34:28 2026] TCP established hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[Mon Nov 16 21:34:28 2026] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[Mon Nov 16 21:34:28 2026] TCP: Hash tables configured (established 262144 bind 65536)
+[Mon Nov 16 21:34:28 2026] MPTCP token hash table entries: 32768 (order: 8, 786432 bytes, linear)
+[Mon Nov 16 21:34:28 2026] UDP hash table entries: 16384 (order: 8, 1048576 bytes, linear)
+[Mon Nov 16 21:34:28 2026] UDP-Lite hash table entries: 16384 (order: 8, 1048576 bytes, linear)
+[Mon Nov 16 21:34:28 2026] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[Mon Nov 16 21:34:28 2026] NET: Registered PF_XDP protocol family
+[Mon Nov 16 21:34:28 2026] pci 0000:01:00.0: ROM [mem 0xfff80000-0xffffffff pref]: can't claim; no compatible bridge window
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.6: bridge window [io  0x1000-0x0fff] to [bus 07] add_size 1000
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.7: bridge window [io  0x1000-0x0fff] to [bus 08] add_size 1000
+[Mon Nov 16 21:34:28 2026] pci 0000:00:03.0: bridge window [io  0x1000-0x0fff] to [bus 09] add_size 1000
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.6: bridge window [io  0x1000-0x1fff]: assigned
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.7: bridge window [io  0x2000-0x2fff]: assigned
+[Mon Nov 16 21:34:28 2026] pci 0000:00:03.0: bridge window [io  0x3000-0x3fff]: assigned
+[Mon Nov 16 21:34:28 2026] pci 0000:01:00.0: ROM [mem 0x81280000-0x812fffff pref]: assigned
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.0: PCI bridge to [bus 01]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.0:   bridge window [mem 0x81200000-0x812fffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.0:   bridge window [mem 0xc060000000-0xc0600fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.1: PCI bridge to [bus 02]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.1:   bridge window [mem 0x81100000-0x811fffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.2: PCI bridge to [bus 03]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.2:   bridge window [mem 0x81000000-0x810fffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.2:   bridge window [mem 0xc060100000-0xc0601fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.3: PCI bridge to [bus 04]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.3:   bridge window [mem 0xc060200000-0xc0602fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.4: PCI bridge to [bus 05]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.4:   bridge window [mem 0x80f00000-0x80ffffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.4:   bridge window [mem 0xc060300000-0xc0603fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.5: PCI bridge to [bus 06]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.5:   bridge window [mem 0x80e00000-0x80efffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.5:   bridge window [mem 0xc060400000-0xc0604fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.6: PCI bridge to [bus 07]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.6:   bridge window [io  0x1000-0x1fff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.6:   bridge window [mem 0x80c00000-0x80dfffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.6:   bridge window [mem 0xc000000000-0xc01fffffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.7: PCI bridge to [bus 08]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.7:   bridge window [io  0x2000-0x2fff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.7:   bridge window [mem 0x80a00000-0x80bfffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:02.7:   bridge window [mem 0xc020000000-0xc03fffffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:03.0: PCI bridge to [bus 09]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:03.0:   bridge window [io  0x3000-0x3fff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:03.0:   bridge window [mem 0x80800000-0x809fffff]
+[Mon Nov 16 21:34:28 2026] pci 0000:00:03.0:   bridge window [mem 0xc040000000-0xc05fffffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:00: resource 7 [mem 0x80000000-0xdfffffff window]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:00: resource 8 [mem 0xf0000000-0xfebfffff window]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:00: resource 9 [mem 0xc000000000-0xc7ffffffff window]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:01: resource 1 [mem 0x81200000-0x812fffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:01: resource 2 [mem 0xc060000000-0xc0600fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:02: resource 1 [mem 0x81100000-0x811fffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:03: resource 1 [mem 0x81000000-0x810fffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:03: resource 2 [mem 0xc060100000-0xc0601fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:04: resource 2 [mem 0xc060200000-0xc0602fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:05: resource 1 [mem 0x80f00000-0x80ffffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:05: resource 2 [mem 0xc060300000-0xc0603fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:06: resource 1 [mem 0x80e00000-0x80efffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:06: resource 2 [mem 0xc060400000-0xc0604fffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:07: resource 0 [io  0x1000-0x1fff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:07: resource 1 [mem 0x80c00000-0x80dfffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:07: resource 2 [mem 0xc000000000-0xc01fffffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:08: resource 0 [io  0x2000-0x2fff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:08: resource 1 [mem 0x80a00000-0x80bfffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:08: resource 2 [mem 0xc020000000-0xc03fffffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:09: resource 0 [io  0x3000-0x3fff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:09: resource 1 [mem 0x80800000-0x809fffff]
+[Mon Nov 16 21:34:28 2026] pci_bus 0000:09: resource 2 [mem 0xc040000000-0xc05fffffff 64bit pref]
+[Mon Nov 16 21:34:28 2026] ACPI: \_SB_.GSIG: Enabled at IRQ 22
+[Mon Nov 16 21:34:28 2026] PCI: CLS 0 bytes, default 64
+[Mon Nov 16 21:34:28 2026] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[Mon Nov 16 21:34:28 2026] Trying to unpack rootfs image as initramfs...
+[Mon Nov 16 21:34:28 2026] software IO TLB: mapped [mem 0x00000000734ea000-0x00000000774ea000] (64MB)
+[Mon Nov 16 21:34:28 2026] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x22983777dd9, max_idle_ns: 440795300422 ns
+[Mon Nov 16 21:34:28 2026] Initialise system trusted keyrings
+[Mon Nov 16 21:34:28 2026] Key type blacklist registered
+[Mon Nov 16 21:34:28 2026] workingset: timestamp_bits=36 max_order=23 bucket_order=0
+[Mon Nov 16 21:34:28 2026] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[Mon Nov 16 21:34:28 2026] fuse: init (API version 7.45)
+[Mon Nov 16 21:34:28 2026] integrity: Platform Keyring initialized
+[Mon Nov 16 21:34:28 2026] integrity: Machine keyring initialized
+[Mon Nov 16 21:34:28 2026] Key type asymmetric registered
+[Mon Nov 16 21:34:28 2026] Asymmetric key parser 'x509' registered
+[Mon Nov 16 21:34:28 2026] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[Mon Nov 16 21:34:28 2026] io scheduler mq-deadline registered
+[Mon Nov 16 21:34:28 2026] ledtrig-cpu: registered to indicate activity on CPUs
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.0: PME: Signaling with IRQ 24
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.0: AER: enabled with IRQ 24
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.1: PME: Signaling with IRQ 25
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.1: AER: enabled with IRQ 25
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.2: PME: Signaling with IRQ 26
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.2: AER: enabled with IRQ 26
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.3: PME: Signaling with IRQ 27
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.3: AER: enabled with IRQ 27
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.4: PME: Signaling with IRQ 28
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.4: AER: enabled with IRQ 28
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.5: PME: Signaling with IRQ 29
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.5: AER: enabled with IRQ 29
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.6: PME: Signaling with IRQ 30
+[Mon Nov 16 21:34:28 2026] Freeing initrd memory: 26788K
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.6: AER: enabled with IRQ 30
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.7: PME: Signaling with IRQ 31
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:02.7: AER: enabled with IRQ 31
+[Mon Nov 16 21:34:28 2026] ACPI: \_SB_.GSIH: Enabled at IRQ 23
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:03.0: PME: Signaling with IRQ 32
+[Mon Nov 16 21:34:28 2026] pcieport 0000:00:03.0: AER: enabled with IRQ 32
+[Mon Nov 16 21:34:28 2026] input: Power Button as /devices/platform/LNXPWRBN:00/input/input0
+[Mon Nov 16 21:34:28 2026] ACPI: button: Power Button [PWRF]
+[Mon Nov 16 21:34:28 2026] ACPI: \_SB_.GSIF: Enabled at IRQ 21
+[Mon Nov 16 21:34:28 2026] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[Mon Nov 16 21:34:28 2026] 00:00: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[Mon Nov 16 21:34:28 2026] Linux agpgart interface v0.103
+[Mon Nov 16 21:34:28 2026] loop: module loaded
+[Mon Nov 16 21:34:28 2026] virtio_scsi virtio5: 8/0/0 default/read/poll queues
+[Mon Nov 16 21:34:28 2026] scsi host0: Virtio SCSI HBA
+[Mon Nov 16 21:34:28 2026] ACPI: bus type drm_connector registered
+[Mon Nov 16 21:34:28 2026] scsi 0:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+[Mon Nov 16 21:34:28 2026] tun: Universal TUN/TAP device driver, 1.6
+[Mon Nov 16 21:34:28 2026] PPP generic driver version 2.4.2
+[Mon Nov 16 21:34:28 2026] xhci_hcd 0000:02:00.0: xHCI Host Controller
+[Mon Nov 16 21:34:28 2026] xhci_hcd 0000:02:00.0: new USB bus registered, assigned bus number 1
+[Mon Nov 16 21:34:28 2026] xhci_hcd 0000:02:00.0: hcc params 0x00087001 hci version 0x100 quirks 0x0000000000000010
+[Mon Nov 16 21:34:28 2026] xhci_hcd 0000:02:00.0: xHCI Host Controller
+[Mon Nov 16 21:34:28 2026] xhci_hcd 0000:02:00.0: new USB bus registered, assigned bus number 2
+[Mon Nov 16 21:34:28 2026] xhci_hcd 0000:02:00.0: Host supports USB 3.0 SuperSpeed
+[Mon Nov 16 21:34:28 2026] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.00
+[Mon Nov 16 21:34:28 2026] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[Mon Nov 16 21:34:28 2026] usb usb1: Product: xHCI Host Controller
+[Mon Nov 16 21:34:28 2026] usb usb1: Manufacturer: Linux 7.0.0-30-generic xhci-hcd
+[Mon Nov 16 21:34:28 2026] usb usb1: SerialNumber: 0000:02:00.0
+[Mon Nov 16 21:34:28 2026] hub 1-0:1.0: USB hub found
+[Mon Nov 16 21:34:28 2026] hub 1-0:1.0: 4 ports detected
+[Mon Nov 16 21:34:28 2026] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[Mon Nov 16 21:34:28 2026] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[Mon Nov 16 21:34:28 2026] sd 0:0:0:0: Power-on or device reset occurred
+[Mon Nov 16 21:34:28 2026] sd 0:0:0:0: [sda] 480002048 512-byte logical blocks: (246 GB/229 GiB)
+[Mon Nov 16 21:34:28 2026] sd 0:0:0:0: [sda] Write Protect is off
+[Mon Nov 16 21:34:28 2026] sd 0:0:0:0: [sda] Mode Sense: 63 00 00 08
+[Mon Nov 16 21:34:28 2026] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.00
+[Mon Nov 16 21:34:28 2026] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[Mon Nov 16 21:34:28 2026] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[Mon Nov 16 21:34:28 2026] usb usb2: Product: xHCI Host Controller
+[Mon Nov 16 21:34:28 2026] usb usb2: Manufacturer: Linux 7.0.0-30-generic xhci-hcd
+[Mon Nov 16 21:34:28 2026] usb usb2: SerialNumber: 0000:02:00.0
+[Mon Nov 16 21:34:28 2026] hub 2-0:1.0: USB hub found
+[Mon Nov 16 21:34:28 2026] hub 2-0:1.0: 4 ports detected
+[Mon Nov 16 21:34:28 2026] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[Mon Nov 16 21:34:28 2026] serio: i8042 KBD port at 0x60,0x64 irq 1
+[Mon Nov 16 21:34:28 2026] serio: i8042 AUX port at 0x60,0x64 irq 12
+[Mon Nov 16 21:34:28 2026] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[Mon Nov 16 21:34:28 2026] mousedev: PS/2 mouse device common for all mice
+[Mon Nov 16 21:34:28 2026] GPT:10002431 != 480002047
+[Mon Nov 16 21:34:28 2026] rtc_cmos 00:03: RTC can wake from S4
+[Mon Nov 16 21:34:28 2026] GPT:Alternate GPT header not at the end of the disk.
+[Mon Nov 16 21:34:28 2026] rtc_cmos 00:03: registered as rtc0
+[Mon Nov 16 21:34:28 2026] GPT:10002431 != 480002047
+[Mon Nov 16 21:34:28 2026] rtc_cmos 00:03: setting system clock to 2026-11-16T21:34:28 UTC (1794864868)
+[Mon Nov 16 21:34:28 2026] GPT: Use GNU Parted to correct GPT errors.
+[Mon Nov 16 21:34:28 2026] rtc_cmos 00:03: alarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[Mon Nov 16 21:34:28 2026]  sda: sda1 sda14 sda15
+[Mon Nov 16 21:34:28 2026] i2c_dev: i2c /dev entries driver
+[Mon Nov 16 21:34:28 2026] sd 0:0:0:0: [sda] Attached SCSI disk
+[Mon Nov 16 21:34:28 2026] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[Mon Nov 16 21:34:28 2026] device-mapper: uevent: version 1.0.3
+[Mon Nov 16 21:34:28 2026] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[Mon Nov 16 21:34:28 2026] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[Mon Nov 16 21:34:28 2026] amd_pstate: the _CPC object is not present in SBIOS or ACPI disabled
+[Mon Nov 16 21:34:28 2026] simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+[Mon Nov 16 21:34:28 2026] [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+[Mon Nov 16 21:34:28 2026] Console: switching to colour frame buffer device 160x50
+[Mon Nov 16 21:34:28 2026] simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+[Mon Nov 16 21:34:28 2026] drop_monitor: Initializing network drop monitor service
+[Mon Nov 16 21:34:28 2026] NET: Registered PF_INET6 protocol family
+[Mon Nov 16 21:34:28 2026] Segment Routing with IPv6
+[Mon Nov 16 21:34:28 2026] In-situ OAM (IOAM) with IPv6
+[Mon Nov 16 21:34:28 2026] NET: Registered PF_PACKET protocol family
+[Mon Nov 16 21:34:28 2026] Key type dns_resolver registered
+[Mon Nov 16 21:34:28 2026] IPI shorthand broadcast: enabled
+[Mon Nov 16 21:34:28 2026] sched_clock: Marking stable (1571006040, 265100800)->(2049749960, -213643120)
+[Mon Nov 16 21:34:28 2026] registered taskstats version 1
+[Mon Nov 16 21:34:28 2026] Loading compiled-in X.509 certificates
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Build time autogenerated kernel key: 95e77db4b9be914d2003459bdb9ea78076958bbb'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[Mon Nov 16 21:34:28 2026] blacklist: Loading compiled-in revocation X.509 certificates
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[Mon Nov 16 21:34:28 2026] Demotion targets for Node 0: null
+[Mon Nov 16 21:34:28 2026] Key type .fscrypt registered
+[Mon Nov 16 21:34:28 2026] Key type fscrypt-provisioning registered
+[Mon Nov 16 21:34:28 2026] Key type big_key registered
+[Mon Nov 16 21:34:28 2026] Key type encrypted registered
+[Mon Nov 16 21:34:28 2026] AppArmor: AppArmor sha256 policy hashing enabled
+[Mon Nov 16 21:34:28 2026] ima: No TPM chip found, activating TPM-bypass!
+[Mon Nov 16 21:34:28 2026] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+[Mon Nov 16 21:34:28 2026] Loading compiled-in module X.509 certificates
+[Mon Nov 16 21:34:28 2026] Loaded X.509 cert 'Build time autogenerated kernel key: 95e77db4b9be914d2003459bdb9ea78076958bbb'
+[Mon Nov 16 21:34:28 2026] ima: Allocated hash algorithm: sha256
+[Mon Nov 16 21:34:28 2026] ima: No architecture policies found
+[Mon Nov 16 21:34:28 2026] evm: Initialising EVM extended attributes:
+[Mon Nov 16 21:34:28 2026] evm: security.selinux
+[Mon Nov 16 21:34:28 2026] evm: security.SMACK64
+[Mon Nov 16 21:34:28 2026] evm: security.SMACK64EXEC
+[Mon Nov 16 21:34:28 2026] evm: security.SMACK64TRANSMUTE
+[Mon Nov 16 21:34:28 2026] evm: security.SMACK64MMAP
+[Mon Nov 16 21:34:28 2026] evm: security.apparmor
+[Mon Nov 16 21:34:29 2026] evm: security.ima
+[Mon Nov 16 21:34:29 2026] evm: security.capability
+[Mon Nov 16 21:34:29 2026] evm: HMAC attrs: 0x1
+[Mon Nov 16 21:34:29 2026] PM:   Magic number: 2:492:601
+[Mon Nov 16 21:34:29 2026] acpi PNP0C0F:0d: hash matches
+[Mon Nov 16 21:34:29 2026] RAS: Correctable Errors collector initialized.
+[Mon Nov 16 21:34:29 2026] clk: Disabling unused clocks
+[Mon Nov 16 21:34:29 2026] PM: genpd: Disabling unused power domains
+[Mon Nov 16 21:34:29 2026] Freeing unused decrypted memory: 2028K
+[Mon Nov 16 21:34:29 2026] Freeing unused kernel image (initmem) memory: 5292K
+[Mon Nov 16 21:34:29 2026] Write protecting the kernel read-only data: 43008k
+[Mon Nov 16 21:34:29 2026] Freeing unused kernel image (text/rodata gap) memory: 776K
+[Mon Nov 16 21:34:29 2026] Freeing unused kernel image (rodata/data gap) memory: 1668K
+[Mon Nov 16 21:34:29 2026] usb 1-1: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+[Mon Nov 16 21:34:29 2026] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=10
+[Mon Nov 16 21:34:29 2026] usb 1-1: Product: QEMU USB Tablet
+[Mon Nov 16 21:34:29 2026] usb 1-1: Manufacturer: QEMU
+[Mon Nov 16 21:34:29 2026] usb 1-1: SerialNumber: 28754-0000:00:02.1:00.0-1
+[Mon Nov 16 21:34:29 2026] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[Mon Nov 16 21:34:29 2026] Run /init as init process
+[Mon Nov 16 21:34:29 2026]   with arguments:
+[Mon Nov 16 21:34:29 2026]     /init
+[Mon Nov 16 21:34:29 2026]   with environment:
+[Mon Nov 16 21:34:29 2026]     HOME=/
+[Mon Nov 16 21:34:29 2026]     TERM=linux
+[Mon Nov 16 21:34:29 2026] systemd[1]: Inserted module 'autofs4'
+[Mon Nov 16 21:34:29 2026] systemd[1]: Successfully made /usr/ read-only.
+[Mon Nov 16 21:34:29 2026] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[Mon Nov 16 21:34:29 2026] systemd[1]: Detected virtualization kvm.
+[Mon Nov 16 21:34:29 2026] systemd[1]: Detected architecture x86-64.
+[Mon Nov 16 21:34:29 2026] systemd[1]: Running in initrd.
+[Mon Nov 16 21:34:29 2026] systemd[1]: Hostname set to <Ubuntu-2604-resolute-64-minimal>.
+[Mon Nov 16 21:34:30 2026] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Queued start job for default target initrd.target.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Expecting device dev-disk-by\x2duuid-9e4ec673\x2d4345\x2d4852\x2d8a69\x2d0f7f3df29989.device - /dev/disk/by-uuid/9e4ec673-4345-4852-8a69-0f7f3df29989...
+[Mon Nov 16 21:34:30 2026] systemd[1]: Expecting device dev-disk-by\x2duuid-A948\x2d365C.device - /dev/disk/by-uuid/A948-365C...
+[Mon Nov 16 21:34:30 2026] systemd[1]: Reached target initrd-usr-fs.target - Initrd /usr File System.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Reached target paths.target - Path Units.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Reached target slices.target - Slice Units.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Reached target swap.target - Swaps.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Reached target timers.target - Timer Units.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[Mon Nov 16 21:34:30 2026] systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Reached target sockets.target - Socket Units.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Starting dracut-cmdline-ask.service - dracut ask for additional cmdline parameters...
+[Mon Nov 16 21:34:30 2026] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[Mon Nov 16 21:34:30 2026] systemd[1]: systemd-battery-check.service - Early Battery Level Check skipped, unmet condition check ConditionDirectoryNotEmpty=/sys/class/power_supply
+[Mon Nov 16 21:34:30 2026] systemd[1]: Starting systemd-journald.service - Journal Service...
+[Mon Nov 16 21:34:30 2026] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[Mon Nov 16 21:34:30 2026] systemd[1]: systemd-pcrphase-initrd.service - TPM PCR Barrier (initrd) skipped, unmet condition check ConditionSecurity=measured-uki
+[Mon Nov 16 21:34:30 2026] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[Mon Nov 16 21:34:30 2026] systemd-journald[171]: Collecting audit messages is disabled.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Finished dracut-cmdline-ask.service - dracut ask for additional cmdline parameters.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[Mon Nov 16 21:34:30 2026] systemd[1]: Starting dracut-cmdline.service - dracut cmdline hook...
+[Mon Nov 16 21:34:30 2026] systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[Mon Nov 16 21:34:30 2026] systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[Mon Nov 16 21:34:30 2026] systemd[1]: Started systemd-journald.service - Journal Service.
+[Mon Nov 16 21:34:30 2026] ACPI: \_SB_.GSIA: Enabled at IRQ 16
+[Mon Nov 16 21:34:30 2026] ahci 0000:00:1f.2: AHCI vers 0001.0000, 32 command slots, 1.5 Gbps, SATA mode
+[Mon Nov 16 21:34:30 2026] ahci 0000:00:1f.2: 6/6 ports implemented (port mask 0x3f)
+[Mon Nov 16 21:34:30 2026] ahci 0000:00:1f.2: flags: 64bit ncq only 
+[Mon Nov 16 21:34:31 2026] hid: raw HID events driver (C) Jiri Kosina
+[Mon Nov 16 21:34:31 2026] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+[Mon Nov 16 21:34:31 2026] scsi host1: ahci
+[Mon Nov 16 21:34:31 2026] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+[Mon Nov 16 21:34:31 2026] scsi host2: ahci
+[Mon Nov 16 21:34:31 2026] scsi host3: ahci
+[Mon Nov 16 21:34:31 2026] usbcore: registered new interface driver usbhid
+[Mon Nov 16 21:34:31 2026] usbhid: USB HID core driver
+[Mon Nov 16 21:34:31 2026] scsi host4: ahci
+[Mon Nov 16 21:34:31 2026] scsi host5: ahci
+[Mon Nov 16 21:34:31 2026] scsi host6: ahci
+[Mon Nov 16 21:34:31 2026] ata1: SATA max UDMA/133 abar m4096@0x81380000 port 0x81380100 irq 60 lpm-pol 1
+[Mon Nov 16 21:34:31 2026] ata2: SATA max UDMA/133 abar m4096@0x81380000 port 0x81380180 irq 60 lpm-pol 1
+[Mon Nov 16 21:34:31 2026] ata3: SATA max UDMA/133 abar m4096@0x81380000 port 0x81380200 irq 60 lpm-pol 1
+[Mon Nov 16 21:34:31 2026] ata4: SATA max UDMA/133 abar m4096@0x81380000 port 0x81380280 irq 60 lpm-pol 1
+[Mon Nov 16 21:34:31 2026] ata5: SATA max UDMA/133 abar m4096@0x81380000 port 0x81380300 irq 60 lpm-pol 1
+[Mon Nov 16 21:34:31 2026] ata6: SATA max UDMA/133 abar m4096@0x81380000 port 0x81380380 irq 60 lpm-pol 1
+[Mon Nov 16 21:34:31 2026] input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:02.1/0000:02:00.0/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input5
+[Mon Nov 16 21:34:31 2026] hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:02:00.0-1/input0
+[Mon Nov 16 21:34:31 2026] ata3: SATA link down (SStatus 0 SControl 300)
+[Mon Nov 16 21:34:31 2026] ata6: SATA link down (SStatus 0 SControl 300)
+[Mon Nov 16 21:34:31 2026] ata4: SATA link down (SStatus 0 SControl 300)
+[Mon Nov 16 21:34:31 2026] ata5: SATA link down (SStatus 0 SControl 300)
+[Mon Nov 16 21:34:31 2026] ata2: SATA link down (SStatus 0 SControl 300)
+[Mon Nov 16 21:34:31 2026] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[Mon Nov 16 21:34:31 2026] ata1.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[Mon Nov 16 21:34:31 2026] ata1.00: applying bridge limits
+[Mon Nov 16 21:34:31 2026] ata1.00: configured for UDMA/100
+[Mon Nov 16 21:34:31 2026] scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+[Mon Nov 16 21:34:31 2026] sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[Mon Nov 16 21:34:31 2026] cdrom: Uniform CD-ROM driver Revision: 3.20
+[Mon Nov 16 21:34:31 2026] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[Mon Nov 16 21:34:31 2026] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[Mon Nov 16 21:34:31 2026] EXT4-fs (sda1): orphan cleanup on readonly fs
+[Mon Nov 16 21:34:31 2026] EXT4-fs (sda1): mounted filesystem 9e4ec673-4345-4852-8a69-0f7f3df29989 ro with ordered data mode. Quota mode: none.
+[Mon Nov 16 21:34:32 2026] systemd-journald[171]: Received SIGTERM from PID 1 (systemd).
+[Mon Nov 16 21:34:32 2026] NET: Registered PF_VSOCK protocol family
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[Mon Nov 16 21:34:33 2026] systemd[1]: Detected virtualization kvm.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Detected architecture x86-64.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Initializing machine ID from SMBIOS/DMI UUID.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Installed transient '/etc/machine-id' file.
+[Mon Nov 16 21:34:33 2026] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[Mon Nov 16 21:34:33 2026] systemd[1]: /usr/lib/systemd/system/xfs_scrub_all.service:26: Support for option CPUAccounting= has been removed and it is ignored
+[Mon Nov 16 21:34:33 2026] systemd[1]: /usr/lib/systemd/system/system-xfs_scrub.slice:15: Support for option CPUAccounting= has been removed and it is ignored
+[Mon Nov 16 21:34:33 2026] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Stopped initrd-switch-root.service - Switch Root.
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Created slice system-xfs_scrub.slice - xfs_scrub background service slice.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Created slice user.slice - User and Session Slice.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Expecting device dev-disk-by\x2duuid-A948\x2d365C.device - /dev/disk/by-uuid/A948-365C...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target imports.target - Image Downloads.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Stopped target initrd-switch-root.target - Switch Root.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Stopped target initrd-fs.target - Initrd File Systems.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Stopped target initrd-root-fs.target - Initrd Root File System.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target slices.target - Slice Units.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target snapd.mounts.target - Mounted snaps.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target swap.target - Swaps.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target time-set.target - System Time Set.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on syslog.socket - Syslog Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-factory-reset.socket - Factory Reset Management.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-mute-console.socket - Console Output Muting Service Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-networkd-varlink.socket - Network Management Varlink Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-networkd.socket - Network Management Netlink Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-uki
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-resolved-monitor.socket - Resolve Monitor Varlink Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-resolved-varlink.socket - Resolve Service Varlink Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Listening on systemd-udevd-varlink.socket - udev Varlink Socket.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[Mon Nov 16 21:34:33 2026] systemd[1]: tmp.mount: Directory /tmp to mount over is not empty, mounting anyway.
+[Mon Nov 16 21:34:33 2026] systemd[1]: Mounting tmp.mount - Temporary Directory /tmp...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting systemd-journald.service - Journal Service...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[Mon Nov 16 21:34:33 2026] systemd[1]: modprobe@configfs.service - Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting modprobe@dm_multipath.service - Load Kernel Module dm_multipath...
+[Mon Nov 16 21:34:33 2026] systemd[1]: modprobe@drm.service - Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[Mon Nov 16 21:34:33 2026] systemd[1]: modprobe@fuse.service - Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+[Mon Nov 16 21:34:33 2026] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[Mon Nov 16 21:34:33 2026] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup skipped, unmet condition check ConditionFileIsExecutable=/usr/bin/ovs-vsctl
+[Mon Nov 16 21:34:33 2026] systemd-journald[511]: Collecting audit messages is disabled.
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-uki
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd-pcrproduct.service - TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-uki
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[Mon Nov 16 21:34:33 2026] systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki
+[Mon Nov 16 21:34:33 2026] pstore: Using crash dump compression: deflate
+[Mon Nov 16 21:34:33 2026] pstore: Registered efi_pstore as persistent store backend
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[Mon Nov 16 21:34:33 2026] systemd[1]: Started systemd-journald.service - Journal Service.
+[Mon Nov 16 21:34:33 2026] EXT4-fs (sda1): re-mounted 9e4ec673-4345-4852-8a69-0f7f3df29989 r/w.
+[Mon Nov 16 21:34:33 2026] systemd-journald[511]: Received client request to flush runtime journal.
+[Mon Nov 16 21:34:34 2026] virtio_net virtio1 enp1s0: renamed from eth0
+[Mon Nov 16 21:34:34 2026] [drm] pci: virtio-vga detected at 0000:00:01.0
+[Mon Nov 16 21:34:34 2026] lpc_ich 0000:00:1f.0: I/O space for GPIO uninitialized
+[Mon Nov 16 21:34:34 2026] Console: switching to colour dummy device 80x25
+[Mon Nov 16 21:34:34 2026] virtio-pci 0000:00:01.0: vgaarb: deactivate vga console
+[Mon Nov 16 21:34:34 2026] [drm] features: -virgl +edid -resource_blob -host_visible
+[Mon Nov 16 21:34:34 2026] [drm] features: -context_init
+[Mon Nov 16 21:34:34 2026] [drm] number of scanouts: 1
+[Mon Nov 16 21:34:34 2026] [drm] number of cap sets: 0
+[Mon Nov 16 21:34:34 2026] i801_smbus 0000:00:1f.3: Enabling SMBus device
+[Mon Nov 16 21:34:34 2026] i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+[Mon Nov 16 21:34:34 2026] i2c i2c-0: Memory type 0x07 not supported yet, not instantiating SPD
+[Mon Nov 16 21:34:34 2026] virtio-pci 0000:00:01.0: [drm] Registered 1 planes with drm panic
+[Mon Nov 16 21:34:34 2026] [drm] Initialized virtio_gpu 0.1.0 for 0000:00:01.0 on minor 1
+[Mon Nov 16 21:34:34 2026] fbcon: virtio_gpudrmfb (fb0) is primary device
+[Mon Nov 16 21:34:34 2026] Console: switching to colour frame buffer device 160x50
+[Mon Nov 16 21:34:34 2026] virtio-pci 0000:00:01.0: [drm] fb0: virtio_gpudrmfb frame buffer device
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.620:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=774 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.620:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=777 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.620:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=776 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.620:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=781 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.620:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=775 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.624:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=786 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.625:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="babeld" pid=780 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.626:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="alsamixer" pid=779 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.626:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="bfdd" pid=783 comm="apparmor_parser"
+[Mon Nov 16 21:34:34 2026] audit: type=1400 audit(1794864874.627:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="bwrap" pid=787 comm="apparmor_parser"
+[Mon Nov 16 21:34:35 2026] 8021q: 802.1Q VLAN Support v1.8
+[Mon Nov 16 21:34:35 2026] 8021q: adding VLAN 0 to HW filter on device enp1s0
+[Mon Nov 16 21:34:35 2026] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[Mon Nov 16 21:34:35 2026] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[Mon Nov 16 21:34:35 2026] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[Mon Nov 16 21:34:36 2026] virtio_net virtio1 eth0: renamed from enp1s0
+[Mon Nov 16 21:34:37 2026] 8021q: adding VLAN 0 to HW filter on device eth0
+[Mon Nov 16 21:34:40 2026] EXT4-fs (sda1): resizing filesystem from 495141 to 59934203 blocks
+[Mon Nov 16 21:34:40 2026] EXT4-fs (sda1): resized filesystem to 59934203
+[Mon Nov 16 21:34:41 2026] kauditd_printk_skb: 172 callbacks suppressed
+[Mon Nov 16 21:34:41 2026] audit: type=1400 audit(1794864881.135:184): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=1213 comm="apparmor_parser"
+[Mon Nov 16 21:34:41 2026] audit: type=1400 audit(1794864881.186:185): apparmor="DENIED" operation="sendmsg" class="file" profile="systemd-detect-virt" name="/att/systemd-detect-virt/run/systemd/journal/socket" pid=1273 comm="systemd-detect-" requested_mask="w" denied_mask="w" fsuid=0 ouid=0
+[Mon Nov 16 21:34:41 2026] audit: type=1400 audit(1794864881.187:186): apparmor="DENIED" operation="capable" class="cap" profile="systemd-detect-virt" pid=1273 comm="systemd-detect-" capability=38  capname="perfmon"
+[Mon Nov 16 21:34:41 2026] audit: type=1400 audit(1794864881.187:187): apparmor="DENIED" operation="sendmsg" class="file" profile="systemd-detect-virt" name="/att/systemd-detect-virt/run/systemd/notify" pid=1273 comm="systemd-detect-" requested_mask="w" denied_mask="w" fsuid=0 ouid=0
+[Mon Nov 16 21:34:41 2026] loop0: detected capacity change from 0 to 8
+[Mon Nov 16 21:34:41 2026] audit: type=1400 audit(1794864881.440:188): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1375 comm="apparmor_parser"
+[Mon Nov 16 21:38:01 2026] pci 0000:07:00.0: [1af4:1041] type 00 class 0x020000 PCIe Endpoint
+[Mon Nov 16 21:38:01 2026] pci 0000:07:00.0: BAR 1 [mem 0x00000000-0x00000fff]
+[Mon Nov 16 21:38:01 2026] pci 0000:07:00.0: BAR 4 [mem 0x00000000-0x00003fff 64bit pref]
+[Mon Nov 16 21:38:01 2026] pci 0000:07:00.0: ROM [mem 0x00000000-0x0007ffff pref]
+[Mon Nov 16 21:38:01 2026] pci 0000:07:00.0: ROM [mem 0x80c00000-0x80c7ffff pref]: assigned
+[Mon Nov 16 21:38:01 2026] pci 0000:07:00.0: BAR 4 [mem 0xc000000000-0xc000003fff 64bit pref]: assigned
+[Mon Nov 16 21:38:01 2026] pci 0000:07:00.0: BAR 1 [mem 0x80c80000-0x80c80fff]: assigned
+[Mon Nov 16 21:38:02 2026] virtio-pci 0000:07:00.0: enabling device (0000 -> 0002)
+[Mon Nov 16 21:38:02 2026] virtio_net virtio6 enp7s0: renamed from eth1
+[Mon Nov 16 21:38:03 2026] 8021q: adding VLAN 0 to HW filter on device enp7s0
+[Mon Nov 16 21:40:15 2026] audit: type=1400 audit(1794865214.998:189): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=7432 comm="apparmor_parser"
+[Mon Nov 16 21:40:15 2026] Initializing XFRM netlink socket
+[Mon Nov 16 21:40:15 2026] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[Mon Nov 16 21:40:31 2026] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[Mon Nov 16 21:40:31 2026] systemd[1]: Detected virtualization kvm.
+[Mon Nov 16 21:40:31 2026] systemd[1]: Detected architecture x86-64.
+[Mon Nov 16 21:40:31 2026] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[Mon Nov 16 21:40:31 2026] systemd[1]: /usr/lib/systemd/system/xfs_scrub_all.service:26: Support for option CPUAccounting= has been removed and it is ignored
+[Mon Nov 16 21:40:31 2026] systemd[1]: /usr/lib/systemd/system/system-xfs_scrub.slice:15: Support for option CPUAccounting= has been removed and it is ignored
+[Mon Nov 16 21:40:33 2026] systemd-journald[511]: Received SIGTERM from PID 1 (systemd).
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopping systemd-journald.service - Journal Service...
+[Mon Nov 16 21:40:33 2026] systemd[1]: Starting rsyslog.service - System Logging Service...
+[Mon Nov 16 21:40:33 2026] systemd[1]: sshd-keygen.service - Generate sshd host keys on first boot skipped, unmet condition check ConditionFirstBoot=yes
+[Mon Nov 16 21:40:33 2026] systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+[Mon Nov 16 21:40:33 2026] systemd[1]: Started multipathd.service - Device-Mapper Multipath Device Controller.
+[Mon Nov 16 21:40:33 2026] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup skipped, unmet condition check ConditionFileIsExecutable=/usr/bin/ovs-vsctl
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopping systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd...
+[Mon Nov 16 21:40:33 2026] systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopped systemd-networkd-wait-online.service - Wait for Network to be Online.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopping systemd-networkd-wait-online.service - Wait for Network to be Online...
+[Mon Nov 16 21:40:33 2026] systemd[1]: systemd-journald.service: Deactivated successfully.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopped systemd-journald.service - Journal Service.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Starting systemd-journald.service - Journal Service...
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopping systemd-resolved.service - Network Name Resolution...
+[Mon Nov 16 21:40:33 2026] systemd[1]: Started containerd.service - containerd container runtime.
+[Mon Nov 16 21:40:33 2026] systemd[1]: systemd-networkd-persistent-storage.service: Deactivated successfully.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopped systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd.
+[Mon Nov 16 21:40:33 2026] systemd[1]: systemd-resolved.service: Deactivated successfully.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopped systemd-resolved.service - Network Name Resolution.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Stopping systemd-networkd.service - Network Management...
+[Mon Nov 16 21:40:33 2026] audit: type=1400 audit(1794865233.523:190): apparmor="DENIED" operation="sendmsg" class="file" profile="systemd-detect-virt" name="/att/systemd-detect-virt/run/systemd/journal/socket" pid=9541 comm="systemd-detect-" requested_mask="w" denied_mask="w" fsuid=0 ouid=0
+[Mon Nov 16 21:40:33 2026] audit: type=1400 audit(1794865233.523:191): apparmor="DENIED" operation="capable" class="cap" profile="systemd-detect-virt" pid=9541 comm="systemd-detect-" capability=38  capname="perfmon"
+[Mon Nov 16 21:40:33 2026] audit: type=1400 audit(1794865233.523:192): apparmor="DENIED" operation="sendmsg" class="file" profile="systemd-detect-virt" name="/att/systemd-detect-virt/run/systemd/notify" pid=9541 comm="systemd-detect-" requested_mask="w" denied_mask="w" fsuid=0 ouid=0
+[Mon Nov 16 21:40:33 2026] systemd-journald[9526]: Collecting audit messages is disabled.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+[Mon Nov 16 21:40:33 2026] systemd[1]: Started chrony.service - chrony, an NTP client/server.
+[Mon Nov 16 21:40:33 2026] systemd[1]: Started systemd-journald.service - Journal Service.
+[Mon Nov 16 21:40:33 2026] audit: type=1400 audit(1794865233.553:193): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=9542 comm="apparmor_parser"
+[Mon Nov 16 21:40:34 2026] coredump: 9632(sysctl): Unsafe core_pattern used with fs.suid_dumpable=2: pipe handler or fully qualified core dump path required. Set kernel.core_pattern before fs.suid_dumpable.
+[Mon Nov 16 21:47:21 2026] workqueue: inode_switch_wbs_work_fn hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+[Mon Nov 16 22:00:20 2026] workqueue: inode_switch_wbs_work_fn hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+[Mon Nov 16 22:00:21 2026] workqueue: inode_switch_wbs_work_fn hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+[Tue Nov 17 06:53:45 2026] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[Tue Nov 17 06:53:45 2026] systemd[1]: Detected virtualization kvm.
+[Tue Nov 17 06:53:45 2026] systemd[1]: Detected architecture x86-64.
+[Tue Nov 17 06:53:45 2026] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[Tue Nov 17 06:53:45 2026] systemd[1]: /usr/lib/systemd/system/xfs_scrub_all.service:26: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:53:45 2026] systemd[1]: /usr/lib/systemd/system/system-xfs_scrub.slice:15: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:53:45 2026] audit: type=1400 audit(1794898425.735:194): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=493330 comm="apparmor_parser"
+[Tue Nov 17 06:54:24 2026] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[Tue Nov 17 06:54:24 2026] systemd[1]: Detected virtualization kvm.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Detected architecture x86-64.
+[Tue Nov 17 06:54:24 2026] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[Tue Nov 17 06:54:24 2026] systemd[1]: /usr/lib/systemd/system/xfs_scrub_all.service:26: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:54:24 2026] systemd[1]: /usr/lib/systemd/system/system-xfs_scrub.slice:15: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:54:24 2026] systemd-journald[9526]: Received SIGTERM from PID 1 (systemd).
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopping systemd-journald.service - Journal Service...
+[Tue Nov 17 06:54:24 2026] systemd[1]: Starting rsyslog.service - System Logging Service...
+[Tue Nov 17 06:54:24 2026] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup skipped, unmet condition check ConditionFileIsExecutable=/usr/bin/ovs-vsctl
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopping systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd...
+[Tue Nov 17 06:54:24 2026] systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopped systemd-networkd-wait-online.service - Wait for Network to be Online.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopping systemd-networkd-wait-online.service - Wait for Network to be Online...
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopping systemd-resolved.service - Network Name Resolution...
+[Tue Nov 17 06:54:24 2026] systemd[1]: systemd-journald.service: Deactivated successfully.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopped systemd-journald.service - Journal Service.
+[Tue Nov 17 06:54:24 2026] systemd[1]: systemd-journald.service: Consumed 12.190s CPU time over 9h 13min 51.507s wall clock time, 25.7M memory peak.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Starting systemd-journald.service - Journal Service...
+[Tue Nov 17 06:54:24 2026] systemd[1]: systemd-resolved.service: Deactivated successfully.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopped systemd-resolved.service - Network Name Resolution.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+[Tue Nov 17 06:54:24 2026] systemd[1]: systemd-networkd-persistent-storage.service: Deactivated successfully.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopped systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Stopping systemd-networkd.service - Network Management...
+[Tue Nov 17 06:54:24 2026] systemd-journald[495868]: Collecting audit messages is disabled.
+[Tue Nov 17 06:54:24 2026] systemd[1]: Started systemd-journald.service - Journal Service.
+[Tue Nov 17 06:54:24 2026] audit: type=1400 audit(1794898465.083:195): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=495875 comm="apparmor_parser"
+[Tue Nov 17 06:55:00 2026] NET: Registered PF_ALG protocol family
+[Tue Nov 17 06:56:19 2026] workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+[Tue Nov 17 06:56:24 2026] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[Tue Nov 17 06:56:24 2026] systemd[1]: Detected virtualization kvm.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Detected architecture x86-64.
+[Tue Nov 17 06:56:24 2026] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[Tue Nov 17 06:56:24 2026] systemd[1]: /usr/lib/systemd/system/xfs_scrub_all.service:26: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:56:24 2026] systemd[1]: /usr/lib/systemd/system/system-xfs_scrub.slice:15: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:56:24 2026] systemd-journald[495868]: Received SIGTERM from PID 1 (systemd).
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopping systemd-journald.service - Journal Service...
+[Tue Nov 17 06:56:24 2026] systemd[1]: multipathd.service: Deactivated successfully.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopped multipathd.service - Device-Mapper Multipath Device Controller.
+[Tue Nov 17 06:56:24 2026] systemd[1]: modprobe@dm_multipath.service - Load Kernel Module dm_multipath skipped, unmet condition check ConditionKernelModuleLoaded=!dm_multipath
+[Tue Nov 17 06:56:24 2026] systemd[1]: Starting multipathd.service - Device-Mapper Multipath Device Controller...
+[Tue Nov 17 06:56:24 2026] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup skipped, unmet condition check ConditionFileIsExecutable=/usr/bin/ovs-vsctl
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopping systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd...
+[Tue Nov 17 06:56:24 2026] systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopped systemd-networkd-wait-online.service - Wait for Network to be Online.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopping systemd-networkd-wait-online.service - Wait for Network to be Online...
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopping systemd-resolved.service - Network Name Resolution...
+[Tue Nov 17 06:56:24 2026] systemd[1]: qemu-guest-agent.service: Deactivated successfully.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopped qemu-guest-agent.service - QEMU Guest Agent.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Started qemu-guest-agent.service - QEMU Guest Agent.
+[Tue Nov 17 06:56:24 2026] systemd[1]: systemd-journald.service: Deactivated successfully.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopped systemd-journald.service - Journal Service.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Starting systemd-journald.service - Journal Service...
+[Tue Nov 17 06:56:24 2026] systemd[1]: systemd-resolved.service: Deactivated successfully.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopped systemd-resolved.service - Network Name Resolution.
+[Tue Nov 17 06:56:24 2026] systemd[1]: systemd-networkd-persistent-storage.service: Deactivated successfully.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopped systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopping systemd-networkd.service - Network Management...
+[Tue Nov 17 06:56:24 2026] systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+[Tue Nov 17 06:56:24 2026] systemd[1]: Started multipathd.service - Device-Mapper Multipath Device Controller.
+[Tue Nov 17 06:56:24 2026] systemd-journald[506311]: Collecting audit messages is disabled.
+[Tue Nov 17 06:56:24 2026] systemd[1]: systemd-networkd.service: Deactivated successfully.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Stopped systemd-networkd.service - Network Management.
+[Tue Nov 17 06:56:24 2026] systemd[1]: Started systemd-journald.service - Journal Service.
+[Tue Nov 17 06:56:37 2026] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[Tue Nov 17 06:56:37 2026] systemd[1]: Detected virtualization kvm.
+[Tue Nov 17 06:56:37 2026] systemd[1]: Detected architecture x86-64.
+[Tue Nov 17 06:56:37 2026] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[Tue Nov 17 06:56:37 2026] systemd[1]: /usr/lib/systemd/system/xfs_scrub_all.service:26: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:56:37 2026] systemd[1]: /usr/lib/systemd/system/system-xfs_scrub.slice:15: Support for option CPUAccounting= has been removed and it is ignored
+[Tue Nov 17 06:56:38 2026] systemd-journald[506311]: Received SIGTERM from PID 1 (systemd).
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopping systemd-journald.service - Journal Service...
+[Tue Nov 17 06:56:38 2026] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup skipped, unmet condition check ConditionFileIsExecutable=/usr/bin/ovs-vsctl
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopping systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd...
+[Tue Nov 17 06:56:38 2026] systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopped systemd-networkd-wait-online.service - Wait for Network to be Online.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopping systemd-networkd-wait-online.service - Wait for Network to be Online...
+[Tue Nov 17 06:56:38 2026] systemd[1]: packagekit.service: Deactivated successfully.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopped packagekit.service - PackageKit Daemon.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Starting packagekit.service - PackageKit Daemon...
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopping systemd-resolved.service - Network Name Resolution...
+[Tue Nov 17 06:56:38 2026] systemd[1]: systemd-journald.service: Deactivated successfully.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopped systemd-journald.service - Journal Service.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Starting systemd-journald.service - Journal Service...
+[Tue Nov 17 06:56:38 2026] systemd[1]: systemd-resolved.service: Deactivated successfully.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopped systemd-resolved.service - Network Name Resolution.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+[Tue Nov 17 06:56:38 2026] systemd[1]: systemd-networkd-persistent-storage.service: Deactivated successfully.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopped systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Stopping systemd-networkd.service - Network Management...
+[Tue Nov 17 06:56:38 2026] systemd-journald[506831]: Collecting audit messages is disabled.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Started packagekit.service - PackageKit Daemon.
+[Tue Nov 17 06:56:38 2026] systemd[1]: Started systemd-journald.service - Journal Service.
+[Tue Nov 17 06:56:47 2026] workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+[Tue Nov 17 06:57:17 2026] audit: type=1400 audit(1794898637.404:196): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=508196 comm="apparmor_parser"
+[Tue Nov 17 06:57:18 2026] audit: type=1400 audit(1794898638.209:197): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=508285 comm="apparmor_parser"
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.602:198): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513101 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.602:199): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513101 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.602:200): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513101 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.602:201): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513101 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.602:202): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513101 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.602:203): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513101 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.759:204): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513106 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.759:205): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513106 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.760:206): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513106 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:13 2026] audit: type=1400 audit(1794898693.760:207): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513106 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:18 2026] kauditd_printk_skb: 8 callbacks suppressed
+[Tue Nov 17 06:58:18 2026] audit: type=1400 audit(1794898698.667:216): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513280 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:18 2026] audit: type=1400 audit(1794898698.667:217): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513280 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:18 2026] audit: type=1400 audit(1794898698.667:218): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513280 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:18 2026] audit: type=1400 audit(1794898698.667:219): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513280 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:18 2026] audit: type=1400 audit(1794898698.667:220): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513280 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:18 2026] audit: type=1400 audit(1794898698.668:221): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513280 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.372:222): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513443 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.372:223): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513443 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.373:224): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513443 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.373:225): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513443 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.373:226): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513443 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.373:227): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513443 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.523:228): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513448 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.523:229): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513448 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.523:230): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513448 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:24 2026] audit: type=1400 audit(1794898704.523:231): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513448 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:29 2026] workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+[Tue Nov 17 06:58:30 2026] kauditd_printk_skb: 2 callbacks suppressed
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.154:234): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513628 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.154:235): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513628 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.154:236): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513628 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.154:237): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513628 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.154:238): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513628 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.154:239): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513628 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.307:240): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513633 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.307:241): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513633 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.308:242): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513633 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:30 2026] audit: type=1400 audit(1794898710.308:243): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513633 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] kauditd_printk_skb: 2 callbacks suppressed
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.828:246): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513802 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.828:247): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513802 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.828:248): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513802 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.828:249): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513802 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.828:250): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513802 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.828:251): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513802 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.994:252): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513807 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.994:253): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513807 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.994:254): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513807 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:35 2026] audit: type=1400 audit(1794898715.994:255): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513807 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] kauditd_printk_skb: 2 callbacks suppressed
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.238:258): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513976 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.238:259): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513976 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.238:260): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513976 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.238:261): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513976 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.238:262): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513976 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.238:263): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513976 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.391:264): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513981 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.391:265): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513981 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.391:266): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=513981 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 06:58:41 2026] audit: type=1400 audit(1794898721.391:267): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=513981 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] kauditd_printk_skb: 2 callbacks suppressed
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.889:270): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.889:271): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.890:272): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.890:273): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.890:274): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.890:275): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.890:276): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 07:01:34 2026] audit: type=1400 audit(1794898894.890:277): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=514361 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:34:30 2026] audit: type=1400 audit(1794908070.334:278): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=515019 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:34:30 2026] audit: type=1400 audit(1794908070.334:279): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=515019 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:34:30 2026] audit: type=1400 audit(1794908070.335:280): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=515019 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:34:30 2026] audit: type=1400 audit(1794908070.335:281): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=515019 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:34:30 2026] audit: type=1400 audit(1794908070.335:282): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=515019 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:34:30 2026] audit: type=1400 audit(1794908070.335:283): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=515019 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:284): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:285): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:286): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:287): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:288): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:289): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:290): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:43:01 2026] audit: type=1400 audit(1794908582.077:291): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=525491 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:44:08 2026] audit: type=1400 audit(1794908649.122:292): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=526224 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:44:08 2026] audit: type=1400 audit(1794908649.122:293): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=526224 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:44:08 2026] audit: type=1400 audit(1794908649.123:294): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=526224 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:44:08 2026] audit: type=1400 audit(1794908649.123:295): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=526224 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:44:08 2026] audit: type=1400 audit(1794908649.123:296): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=526224 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:44:08 2026] audit: type=1400 audit(1794908649.123:297): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=526224 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.339:298): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.339:299): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.340:300): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.340:301): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.340:302): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.340:303): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.340:304): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:52:11 2026] audit: type=1400 audit(1794909131.340:305): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=536080 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:53:20 2026] audit: type=1400 audit(1794909200.893:306): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=536811 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:53:20 2026] audit: type=1400 audit(1794909200.893:307): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=536811 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:53:20 2026] audit: type=1400 audit(1794909200.893:308): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=536811 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:53:20 2026] audit: type=1400 audit(1794909200.893:309): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=536811 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:53:20 2026] audit: type=1400 audit(1794909200.893:310): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=536811 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 09:53:20 2026] audit: type=1400 audit(1794909200.893:311): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=536811 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.101:312): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.101:313): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.102:314): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.102:315): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.102:316): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.102:317): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.102:318): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:01:22 2026] audit: type=1400 audit(1794909683.102:319): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=546660 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:02:26 2026] audit: type=1400 audit(1794909747.100:320): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=547613 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:02:26 2026] audit: type=1400 audit(1794909747.101:321): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=547613 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:02:26 2026] audit: type=1400 audit(1794909747.101:322): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=547613 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:02:26 2026] audit: type=1400 audit(1794909747.101:323): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=547613 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:02:26 2026] audit: type=1400 audit(1794909747.101:324): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=547613 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:02:26 2026] audit: type=1400 audit(1794909747.101:325): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=547613 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:06:46 2026] audit: type=1400 audit(1794910006.259:326): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=547892 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:06:46 2026] audit: type=1400 audit(1794910006.259:327): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=547892 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:06:46 2026] audit: type=1400 audit(1794910006.259:328): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=547892 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:06:46 2026] audit: type=1400 audit(1794910006.259:329): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=547892 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:06:46 2026] audit: type=1400 audit(1794910006.259:330): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=547892 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:06:46 2026] audit: type=1400 audit(1794910006.259:331): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=547892 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.795:332): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.795:333): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.795:334): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.795:335): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.795:336): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.795:337): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.796:338): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:12:41 2026] audit: type=1400 audit(1794910361.796:339): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=555215 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:13:57 2026] audit: type=1400 audit(1794910437.647:340): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=555952 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:13:57 2026] audit: type=1400 audit(1794910437.647:341): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=555952 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:13:57 2026] audit: type=1400 audit(1794910437.647:342): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=555952 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:13:57 2026] audit: type=1400 audit(1794910437.647:343): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=555952 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:13:57 2026] audit: type=1400 audit(1794910437.648:344): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=555952 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:13:57 2026] audit: type=1400 audit(1794910437.648:345): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=555952 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.559:346): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.559:347): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.560:348): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.560:349): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.560:350): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.560:351): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.560:352): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:19:18 2026] audit: type=1400 audit(1794910758.560:353): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=562662 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:20:28 2026] audit: type=1400 audit(1794910828.745:354): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=563405 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:20:28 2026] audit: type=1400 audit(1794910828.745:355): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=563405 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:20:28 2026] audit: type=1400 audit(1794910828.745:356): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=563405 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:20:28 2026] audit: type=1400 audit(1794910828.745:357): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=563405 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:20:28 2026] audit: type=1400 audit(1794910828.745:358): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=563405 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:20:28 2026] audit: type=1400 audit(1794910828.745:359): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=563405 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.153:360): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.153:361): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.153:362): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.153:363): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.154:364): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.154:365): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.154:366): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:25:42 2026] audit: type=1400 audit(1794911143.154:367): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=569989 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:27:07 2026] audit: type=1400 audit(1794911227.875:368): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=571074 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:27:07 2026] audit: type=1400 audit(1794911227.875:369): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=571074 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:27:07 2026] audit: type=1400 audit(1794911227.875:370): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=571074 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:27:07 2026] audit: type=1400 audit(1794911227.875:371): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=571074 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:27:07 2026] audit: type=1400 audit(1794911227.875:372): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=571074 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:27:07 2026] audit: type=1400 audit(1794911227.875:373): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=571074 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:45:34 2026] audit: type=1400 audit(1794912334.206:374): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=571277 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:45:34 2026] audit: type=1400 audit(1794912334.206:375): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=571277 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:45:34 2026] audit: type=1400 audit(1794912334.207:376): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=571277 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:45:34 2026] audit: type=1400 audit(1794912334.207:377): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=571277 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:45:34 2026] audit: type=1400 audit(1794912334.207:378): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=571277 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 10:45:34 2026] audit: type=1400 audit(1794912334.207:379): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=571277 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:380): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:381): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:382): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:383): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:384): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:385): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:386): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:387): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:388): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:32:41 2026] audit: type=1400 audit(1794918761.424:389): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=702153 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.831:390): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.831:391): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.831:392): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.831:393): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.831:394): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.831:395): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.832:396): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.832:397): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.832:398): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:52:38 2026] audit: type=1400 audit(1794919958.832:399): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=726836 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.720:400): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.720:401): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.720:402): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.720:403): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.721:404): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.721:405): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.721:406): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.721:407): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.721:408): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:57:28 2026] audit: type=1400 audit(1794920248.721:409): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=732806 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:58:35 2026] audit: type=1400 audit(1794920315.670:410): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=734184 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:58:35 2026] audit: type=1400 audit(1794920315.670:411): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=734184 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:58:35 2026] audit: type=1400 audit(1794920315.671:412): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=734184 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:58:35 2026] audit: type=1400 audit(1794920315.671:413): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=734184 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:58:35 2026] audit: type=1400 audit(1794920315.671:414): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=734184 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:58:35 2026] audit: type=1400 audit(1794920315.671:415): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=734184 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.307:416): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.307:417): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:418): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:419): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:420): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:421): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:422): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:423): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:424): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 12:59:59 2026] audit: type=1400 audit(1794920399.308:425): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=736054 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.334:426): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.334:427): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.334:428): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.334:429): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.334:430): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.335:431): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.335:432): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.335:433): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.335:434): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:15:00 2026] audit: type=1400 audit(1794921300.335:435): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=754512 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.551:436): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.552:437): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.552:438): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.552:439): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.552:440): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.552:441): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.552:442): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.552:443): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.553:444): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:17:11 2026] audit: type=1400 audit(1794921431.553:445): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=757378 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.866:446): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.866:447): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.866:448): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.866:449): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.867:450): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.867:451): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.867:452): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.867:453): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.867:454): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:25:13 2026] audit: type=1400 audit(1794921913.867:455): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=767262 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.094:456): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.094:457): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.094:458): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.094:459): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.095:460): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.095:461): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.095:462): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.095:463): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.095:464): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:45:55 2026] audit: type=1400 audit(1794923156.095:465): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=792571 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.205:466): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.206:467): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.206:468): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.206:469): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.206:470): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.206:471): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.206:472): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.206:473): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.207:474): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/nsswitch.conf" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Tue Nov 17 13:51:20 2026] audit: type=1400 audit(1794923481.207:475): apparmor="DENIED" operation="open" class="file" profile="who" name="/etc/passwd" pid=800374 comm="who" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
