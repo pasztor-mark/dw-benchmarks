@@ -1,5 +1,7 @@
 # dotwire benchmarks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24406317.svg)](https://doi.org/10.5281/zenodo.24406317)
+
 Benchmark harness, raw data and case study comparing the [dotwire](https://dotwire.pasztormark.dev) realtime chat server with [Tinode](https://github.com/tinode/chat) on identical hardware. An exploratory, untuned Synapse attempt is kept as an appendix and excluded from every comparison. Results are also published at [dotwire.pasztormark.dev/docs/benchmarks](https://dotwire.pasztormark.dev/docs/benchmarks).
 
 - `harness/`: `dwbench`, an open-loop load generator in Rust with an adapter per target.
@@ -117,4 +119,4 @@ How the v0.4 campaign actually ran: `./bench launch` ran until the Synapse block
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff).
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: [10.5281/zenodo.24406317](https://doi.org/10.5281/zenodo.24406317) for the latest version, [10.5281/zenodo.24406318](https://doi.org/10.5281/zenodo.24406318) for `dotwire-0.4.1-vs-tinode-0.25.3`.
